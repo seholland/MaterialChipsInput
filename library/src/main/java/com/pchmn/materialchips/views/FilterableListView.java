@@ -38,6 +38,7 @@ public class FilterableListView extends RelativeLayout {
     private List<? extends ChipInterface> mFilterableList;
     // others
     private ChipsInput mChipsInput;
+    private List<Character> mValidChipsSeparators;
 
     public FilterableListView(Context context) {
         super(context);
@@ -58,9 +59,11 @@ public class FilterableListView extends RelativeLayout {
         setVisibility(GONE);
     }
 
-    public void build(List<? extends ChipInterface> filterableList, ChipsInput chipsInput, ColorStateList backgroundColor, ColorStateList textColor) {
+    public void build(List<? extends ChipInterface> filterableList, ChipsInput chipsInput, ColorStateList backgroundColor, ColorStateList textColor, List<Character> validChipsSeparators) {
         mFilterableList = filterableList;
         mChipsInput = chipsInput;
+
+        mValidChipsSeparators = validChipsSeparators;
 
         // adapter
         mAdapter = new FilterableAdapter(mContext, mRecyclerView, filterableList, chipsInput, backgroundColor, textColor);
@@ -105,6 +108,10 @@ public class FilterableListView extends RelativeLayout {
     }
 
     public void filterList(CharSequence text) {
+        if (mValidChipsSeparators.contains(text.toString().charAt(text.length() - 1))) {
+            fadeOut();
+            return;
+        }
         mAdapter.getFilter().filter(text, new Filter.FilterListener() {
             @Override
             public void onFilterComplete(int count) {
@@ -154,5 +161,9 @@ public class FilterableListView extends RelativeLayout {
         anim.setDuration(200);
         startAnimation(anim);
         setVisibility(GONE);
+    }
+
+    public FilterableAdapter getFilterableAdapter() {
+        return mAdapter;
     }
 }

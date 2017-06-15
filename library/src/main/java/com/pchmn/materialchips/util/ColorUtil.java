@@ -6,8 +6,6 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.util.TypedValue;
 
-import com.pchmn.materialchips.R;
-
 public class ColorUtil {
 
     public static int lighter(int color, float factor) {

@@ -5,32 +5,28 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.pchmn.materialchips.ChipsInput;
-import com.pchmn.materialchips.R;
-import com.pchmn.materialchips.model.ChipInterface;
-import com.pchmn.materialchips.util.ColorUtil;
-import com.pchmn.materialchips.util.LetterTileProvider;
-import com.pchmn.materialchips.util.ViewUtil;
 
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import com.pchmn.materialchips.ChipsInput;
+import com.pchmn.materialchips.R;
+import com.pchmn.materialchips.model.ChipInterface;
+import com.pchmn.materialchips.util.ColorUtil;
+import com.pchmn.materialchips.util.LetterTileProvider;
 
 import static android.view.View.GONE;
 
@@ -271,5 +267,9 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     private void sortList(List<? extends ChipInterface> list) {
         Collections.sort(list, mComparator);
+    }
+
+    public List<ChipInterface> getFilteredList() {
+        return mFilteredList;
     }
 }

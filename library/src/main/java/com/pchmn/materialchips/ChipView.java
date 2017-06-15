@@ -10,21 +10,17 @@ import android.net.Uri;
 import android.support.annotation.ColorInt;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.pchmn.materialchips.model.Chip;
-import com.pchmn.materialchips.model.ChipInterface;
-import com.pchmn.materialchips.util.LetterTileProvider;
-import com.pchmn.materialchips.util.ViewUtil;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.hdodenhof.circleimageview.CircleImageView;
+import com.pchmn.materialchips.model.ChipInterface;
+import com.pchmn.materialchips.util.LetterTileProvider;
+import com.pchmn.materialchips.util.ViewUtil;
 
 public class ChipView extends RelativeLayout {
 
@@ -200,21 +196,28 @@ public class ChipView extends RelativeLayout {
 
         }
         else {
-            // show icon
-            mAvatarIconImageView.setVisibility(VISIBLE);
             // adjust padding
             if(mDeleteButton.getVisibility() == VISIBLE)
                 mLabelTextView.setPadding(ViewUtil.dpToPx(8), 0, 0, 0);
             else
                 mLabelTextView.setPadding(ViewUtil.dpToPx(8), 0, ViewUtil.dpToPx(12), 0);
 
-            // set icon
-            if(mAvatarIconUri != null)
-                mAvatarIconImageView.setImageURI(mAvatarIconUri);
-            else if(mAvatarIconDrawable != null)
+            setLabelColor(ContextCompat.getColor(mContext, android.R.color.black));
+            if(mAvatarIconUri != null) {
+                if(mAvatarIconUri.equals(Uri.EMPTY)) {
+                    mAvatarIconImageView.setVisibility(GONE);
+                    setLabelColor(ContextCompat.getColor(mContext, android.R.color.holo_red_dark));
+                } else {
+                    mAvatarIconImageView.setVisibility(VISIBLE);
+                    mAvatarIconImageView.setImageURI(mAvatarIconUri);
+                }
+            } else if(mAvatarIconDrawable != null) {
+                mAvatarIconImageView.setVisibility(VISIBLE);
                 mAvatarIconImageView.setImageDrawable(mAvatarIconDrawable);
-            else
+            } else {
+                mAvatarIconImageView.setVisibility(VISIBLE);
                 mAvatarIconImageView.setImageBitmap(mLetterTileProvider.getLetterTile(getLabel()));
+            }
         }
     }
 
