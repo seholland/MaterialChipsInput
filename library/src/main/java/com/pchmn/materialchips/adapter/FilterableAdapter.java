@@ -227,8 +227,10 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
             mFilteredList.clear();
-            mFilteredList.addAll((ArrayList<ChipInterface>) results.values);
-            notifyDataSetChanged();
+            if (results != null && results.values != null) {
+                mFilteredList.addAll((ArrayList<ChipInterface>) results.values);
+                notifyDataSetChanged();
+            }
         }
     }
 
