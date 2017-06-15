@@ -11,9 +11,15 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.EditText;
 
 import com.beloo.widget.chipslayoutmanager.ChipsLayoutManager;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import com.pchmn.materialchips.adapter.ChipsAdapter;
 import com.pchmn.materialchips.model.Chip;
 import com.pchmn.materialchips.model.ChipInterface;
@@ -24,12 +30,6 @@ import com.pchmn.materialchips.views.ChipsInputEditText;
 import com.pchmn.materialchips.views.DetailedChipView;
 import com.pchmn.materialchips.views.FilterableListView;
 import com.pchmn.materialchips.views.ScrollViewMaxHeight;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class ChipsInput extends ScrollViewMaxHeight {
 
@@ -66,6 +66,7 @@ public class ChipsInput extends ScrollViewMaxHeight {
     private FilterableListView mFilterableListView;
     // chip validator
     private ChipValidator mChipValidator;
+    private List<Character> mValidChipSeparators = new ArrayList<>(Arrays.asList(' ', ',', ';'));
 
     public ChipsInput(Context context) {
         super(context);
@@ -339,7 +340,7 @@ public class ChipsInput extends ScrollViewMaxHeight {
     public void setFilterableList(List<? extends ChipInterface> list) {
         mChipList = list;
         mFilterableListView = new FilterableListView(mContext);
-        mFilterableListView.build(mChipList, this, mFilterableListBackgroundColor, mFilterableListTextColor);
+        mFilterableListView.build(mChipList, this, mFilterableListBackgroundColor, mFilterableListTextColor, getValidChipSeparators());
         mChipsAdapter.setFilterableListView(mFilterableListView);
     }
 
@@ -355,6 +356,14 @@ public class ChipsInput extends ScrollViewMaxHeight {
         this.mChipValidator = mChipValidator;
     }
 
+    public List<Character> getValidChipSeparators() {
+        return mValidChipSeparators;
+    }
+
+    public void setValidChipSeparators(List<Character> validChipSeparators) {
+        mValidChipSeparators = validChipSeparators;
+    }
+
     public interface ChipsListener {
         void onChipAdded(ChipInterface chip, int newSize);
         void onChipRemoved(ChipInterface chip, int newSize);
@@ -363,5 +372,9 @@ public class ChipsInput extends ScrollViewMaxHeight {
 
     public interface ChipValidator {
         boolean areEquals(ChipInterface chip1, ChipInterface chip2);
+    }
+
+    public FilterableListView getFilterableListView() {
+        return mFilterableListView;
     }
 }
