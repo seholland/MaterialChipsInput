@@ -11,12 +11,10 @@ public class ChipsInputEditText extends android.support.v7.widget.AppCompatEditT
 
     public ChipsInputEditText(Context context) {
         super(context);
-        setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
     }
 
     public ChipsInputEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
     }
 
     public boolean isFilterableListVisible() {
