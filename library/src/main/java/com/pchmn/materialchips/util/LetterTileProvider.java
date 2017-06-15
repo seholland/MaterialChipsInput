@@ -16,6 +16,8 @@ import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
 import android.text.TextPaint;
 
+import com.pchmn.materialchips.R;
+
 
 /**
  * Used to create a {@link Bitmap} that contains a letter used in the English

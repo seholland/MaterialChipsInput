@@ -21,8 +21,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 import com.pchmn.materialchips.R;
 import com.pchmn.materialchips.R2;
+import com.pchmn.materialchips.model.ChipInterface;
 import com.pchmn.materialchips.util.ColorUtil;
 import com.pchmn.materialchips.util.LetterTileProvider;
+
 
 
 public class DetailedChipView extends RelativeLayout {
@@ -201,6 +203,7 @@ public class DetailedChipView extends RelativeLayout {
             return this;
         }
 
+        public Builder chip(ChipInterface chip) {
             this.avatarUri = chip.getAvatarUri();
             this.avatarDrawable = chip.getAvatarDrawable();
             this.name = chip.getLabel();
