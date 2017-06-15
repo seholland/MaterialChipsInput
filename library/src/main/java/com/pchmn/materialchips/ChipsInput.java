@@ -377,4 +377,8 @@ public class ChipsInput extends ScrollViewMaxHeight {
     public FilterableListView getFilterableListView() {
         return mFilterableListView;
     }
+
+    public RecyclerView getRecyclerView() {
+        return mRecyclerView;
+    }
 }
