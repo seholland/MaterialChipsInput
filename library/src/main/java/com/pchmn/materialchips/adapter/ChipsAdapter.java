@@ -384,4 +384,8 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
         return false;
     }
+
+    public ChipsInputEditText getEditText() {
+        return mEditText;
+    }
 }
