@@ -15,25 +15,25 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import de.hdodenhof.circleimageview.CircleImageView;
+
 import com.pchmn.materialchips.model.ChipInterface;
 import com.pchmn.materialchips.util.LetterTileProvider;
 import com.pchmn.materialchips.util.ViewUtil;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class ChipView extends RelativeLayout {
 
     private static final String TAG = ChipView.class.toString();
-    // context
-    private Context mContext;
-    // xml elements
-    @BindView(R2.id.content) LinearLayout mContentLayout;
-    @BindView(R2.id.icon) CircleImageView mAvatarIconImageView;
-    @BindView(R2.id.label) TextView mLabelTextView;
-    @BindView(R2.id.delete_button) ImageButton mDeleteButton;
     // attributes
     private static final int NONE = -1;
+    // xml elements
+    LinearLayout mContentLayout;
+    CircleImageView mAvatarIconImageView;
+    TextView mLabelTextView;
+    ImageButton mDeleteButton;
+    // context
+    private Context mContext;
     private String mLabel;
     private ColorStateList mLabelColor;
     private boolean mHasAvatarIcon = false;
@@ -60,6 +60,23 @@ public class ChipView extends RelativeLayout {
         init(attrs);
     }
 
+    private static ChipView newInstance(Builder builder) {
+        ChipView chipView = new ChipView(builder.context);
+        chipView.mLabel = builder.label;
+        chipView.mLabelColor = builder.labelColor;
+        chipView.mHasAvatarIcon = builder.hasAvatarIcon;
+        chipView.mAvatarIconUri = builder.avatarIconUri;
+        chipView.mAvatarIconDrawable = builder.avatarIconDrawable;
+        chipView.mDeletable = builder.deletable;
+        chipView.mDeleteIcon = builder.deleteIcon;
+        chipView.mDeleteIconColor = builder.deleteIconColor;
+        chipView.mBackgroundColor = builder.backgroundColor;
+        chipView.mChip = builder.chip;
+        chipView.inflateWithAttributes();
+
+        return chipView;
+    }
+
     /**
      * Inflate the view according to attributes
      *
@@ -69,7 +86,10 @@ public class ChipView extends RelativeLayout {
         // inflate layout
         View rootView = inflate(getContext(), R.layout.chip_view, this);
         // butter knife
-        ButterKnife.bind(this, rootView);
+        mContentLayout = (LinearLayout) rootView.findViewById(R.id.content);
+        mAvatarIconImageView = (CircleImageView) rootView.findViewById(R.id.icon);
+        mLabelTextView = (TextView) rootView.findViewById(R.id.label);
+        mDeleteButton = (ImageButton) rootView.findViewById(R.id.delete_button);
         // letter tile provider
         mLetterTileProvider = new LetterTileProvider(mContext);
 
@@ -432,22 +452,5 @@ public class ChipView extends RelativeLayout {
         public ChipView build() {
             return newInstance(this);
         }
-    }
-
-    private static ChipView newInstance(Builder builder) {
-        ChipView chipView = new ChipView(builder.context);
-        chipView.mLabel = builder.label;
-        chipView.mLabelColor = builder.labelColor;
-        chipView.mHasAvatarIcon = builder.hasAvatarIcon;
-        chipView.mAvatarIconUri = builder.avatarIconUri;
-        chipView.mAvatarIconDrawable = builder.avatarIconDrawable;
-        chipView.mDeletable = builder.deletable;
-        chipView.mDeleteIcon = builder.deleteIcon;
-        chipView.mDeleteIconColor = builder.deleteIconColor;
-        chipView.mBackgroundColor = builder.backgroundColor;
-        chipView.mChip = builder.chip;
-        chipView.inflateWithAttributes();
-
-        return chipView;
     }
 }

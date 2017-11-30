@@ -39,7 +39,7 @@
             android:paddingStart="8dp"
             android:singleLine="true"
             android:textSize="14sp"
-            tools:text=" consectetur adipiscing elit. Fusce lectus nibh, placerat a commodo a, aliquam ac neque. " />
+            tools:text="consectetur adipiscing elit. Fusce lectus nibh, placerat a commodo a, aliquam ac neque." />
 
         <!-- remove button -->
         <ImageButton

@@ -18,22 +18,18 @@ import android.widget.RelativeLayout;
 
 import com.pchmn.materialchips.ChipsInput;
 import com.pchmn.materialchips.R;
-import com.pchmn.materialchips.R2;
 import com.pchmn.materialchips.adapter.FilterableAdapter;
 import com.pchmn.materialchips.model.ChipInterface;
 import com.pchmn.materialchips.util.ViewUtil;
 
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 public class FilterableListView extends RelativeLayout {
 
     private static final String TAG = FilterableListView.class.toString();
-    private Context mContext;
     // list
-    @BindView(R2.id.recycler_view) RecyclerView mRecyclerView;
+    RecyclerView mRecyclerView;
+    private Context mContext;
     private FilterableAdapter mAdapter;
     private List<? extends ChipInterface> mFilterableList;
     // others
@@ -49,8 +45,8 @@ public class FilterableListView extends RelativeLayout {
     private void init() {
         // inflate layout
         View view = inflate(getContext(), R.layout.list_filterable_view, this);
-        // butter knife
-        ButterKnife.bind(this, view);
+
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
 
         // recycler
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
@@ -134,11 +130,13 @@ public class FilterableListView extends RelativeLayout {
         // get visible window (keyboard shown)
         final View rootView = getRootView();
         Rect r = new Rect();
-        rootView.getWindowVisibleDisplayFrame(r);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
+            rootView.getWindowVisibleDisplayFrame(r);
+        }
 
         int[] coord = new int[2];
         mChipsInput.getLocationInWindow(coord);
-        ViewGroup.MarginLayoutParams layoutParams = (MarginLayoutParams) getLayoutParams();
+        MarginLayoutParams layoutParams = (MarginLayoutParams) getLayoutParams();
         layoutParams.topMargin = coord[1] + mChipsInput.getHeight();
         // height of the keyboard
         layoutParams.bottomMargin = rootView.getHeight() - r.bottom;

@@ -1,10 +1,9 @@
 package com.pchmn.sample.materialchipsinput;
 
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -91,7 +90,7 @@ public class ChipExamplesActivity extends AppCompatActivity {
         chipView1.setHasAvatarIcon(true);
 
         ChipView chipView2 = new ChipView(this);
-        chipView2.setLabel("Test 1");
+        chipView2.setLabel("consectetur adipiscing elit. Fusce lectus nibh, placerat a commodo a, aliquam ac neque.");
         chipView2.setChipBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent));
         chipView2.setLabelColor(ContextCompat.getColor(this, R.color.colorPrimary));
         chipView2.setAvatarIcon(uri);
