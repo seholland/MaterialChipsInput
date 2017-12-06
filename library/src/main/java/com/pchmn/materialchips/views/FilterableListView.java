@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.graphics.PorterDuff;
-import android.graphics.Rect;
 import android.os.Build;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -46,7 +45,7 @@ public class FilterableListView extends RelativeLayout {
         // inflate layout
         View view = inflate(getContext(), R.layout.list_filterable_view, this);
 
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        mRecyclerView = view.findViewById(R.id.recycler_view);
 
         // recycler
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
@@ -55,16 +54,15 @@ public class FilterableListView extends RelativeLayout {
         setVisibility(GONE);
     }
 
+
     public void build(List<? extends ChipInterface> filterableList, ChipsInput chipsInput, ColorStateList backgroundColor, ColorStateList textColor, List<Character> validChipsSeparators) {
         mFilterableList = filterableList;
         mChipsInput = chipsInput;
-
         mValidChipsSeparators = validChipsSeparators;
-
         // adapter
         mAdapter = new FilterableAdapter(mContext, mRecyclerView, filterableList, chipsInput, backgroundColor, textColor);
         mRecyclerView.setAdapter(mAdapter);
-        if(backgroundColor != null)
+        if (backgroundColor != null)
             mRecyclerView.getBackground().setColorFilter(backgroundColor.getDefaultColor(), PorterDuff.Mode.SRC_ATOP);
 
         // listen to change in the tree
@@ -84,10 +82,12 @@ public class FilterableListView extends RelativeLayout {
                 layoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);
                 layoutParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
 
-                if(mContext.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+                if (mContext.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
                     layoutParams.bottomMargin = ViewUtil.getNavBarHeight(mContext);
+                } else {
+                    layoutParams.leftMargin = ViewUtil.getNavBarHeight(mContext);
+                    layoutParams.rightMargin = ViewUtil.getNavBarHeight(mContext);
                 }
-
 
                 // add view
                 rootView.addView(FilterableListView.this, layoutParams);
@@ -112,7 +112,7 @@ public class FilterableListView extends RelativeLayout {
             @Override
             public void onFilterComplete(int count) {
                 // show if there are results
-                if(mAdapter.getItemCount() > 0)
+                if (mAdapter.getItemCount() > 0)
                     fadeIn();
                 else
                     fadeOut();
@@ -124,22 +124,13 @@ public class FilterableListView extends RelativeLayout {
      * Fade in
      */
     public void fadeIn() {
-        if(getVisibility() == VISIBLE)
+        if (getVisibility() == VISIBLE)
             return;
-
-        // get visible window (keyboard shown)
-        final View rootView = getRootView();
-        Rect r = new Rect();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
-            rootView.getWindowVisibleDisplayFrame(r);
-        }
 
         int[] coord = new int[2];
         mChipsInput.getLocationInWindow(coord);
         MarginLayoutParams layoutParams = (MarginLayoutParams) getLayoutParams();
         layoutParams.topMargin = coord[1] + mChipsInput.getHeight();
-        // height of the keyboard
-        layoutParams.bottomMargin = rootView.getHeight() - r.bottom;
         setLayoutParams(layoutParams);
 
         AlphaAnimation anim = new AlphaAnimation(0.0f, 1.0f);
@@ -152,7 +143,7 @@ public class FilterableListView extends RelativeLayout {
      * Fade out
      */
     public void fadeOut() {
-        if(getVisibility() == GONE)
+        if (getVisibility() == GONE)
             return;
 
         AlphaAnimation anim = new AlphaAnimation(1.0f, 0.0f);

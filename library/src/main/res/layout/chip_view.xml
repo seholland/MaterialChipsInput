@@ -21,8 +21,8 @@
             android:id="@+id/icon"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/avatar"
             android:visibility="gone"
+            tools:src="@tools:sample/avatars"
             tools:visibility="visible" />
 
         <!-- label -->
@@ -39,7 +39,7 @@
             android:paddingStart="8dp"
             android:singleLine="true"
             android:textSize="14sp"
-            tools:text="consectetur adipiscing elit. Fusce lectus nibh, placerat a commodo a, aliquam ac neque." />
+            tools:text="@tools:sample/lorem/random" />
 
         <!-- remove button -->
         <ImageButton
@@ -50,6 +50,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@android:string/cancel"
             android:src="@drawable/ic_cancel_grey_24dp" />
 
     </LinearLayout>

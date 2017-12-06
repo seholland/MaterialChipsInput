@@ -86,13 +86,11 @@ public class ChipsInput extends ScrollViewMaxHeight {
         // inflate layout
         View rootView = inflate(getContext(), R.layout.chips_input, this);
 
-        mRecyclerView = (RecyclerView) rootView.findViewById(R.id.chips_recycler);
+        mRecyclerView = rootView.findViewById(R.id.chips_recycler);
         // attributes
         if (attrs != null) {
             TypedArray a = mContext.getTheme().obtainStyledAttributes(
-                    attrs,
-                    R.styleable.ChipsInput,
-                    0, 0);
+                    attrs, R.styleable.ChipsInput, 0, 0);
 
             try {
                 // hint
