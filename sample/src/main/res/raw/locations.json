@@ -1,0 +1,6017 @@
+[
+  {
+    "id": "Aalst",
+    "displayName": "Aalst (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Antwerp",
+    "displayName": "Antwerp (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Arlon",
+    "displayName": "Arlon (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Ath",
+    "displayName": "Ath (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Oudenaarde",
+    "displayName": "Oudenaarde (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Bastogne",
+    "displayName": "Bastogne (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Brugge",
+    "displayName": "Brugge (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Brussels-Capital",
+    "displayName": "Brussels-Capital (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Charleroi",
+    "displayName": "Charleroi (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Kortrijk",
+    "displayName": "Kortrijk (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Dinant",
+    "displayName": "Dinant (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Diksmuide",
+    "displayName": "Diksmuide (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Eeklo",
+    "displayName": "Eeklo (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Veurne",
+    "displayName": "Veurne (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Gent",
+    "displayName": "Gent (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Halle-Vilvoorde",
+    "displayName": "Halle-Vilvoorde (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Hasselt",
+    "displayName": "Hasselt (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Huy",
+    "displayName": "Huy (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "The beach",
+    "displayName": "The beach (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Liège",
+    "displayName": "Liège (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Leuven",
+    "displayName": "Leuven (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Maaseik",
+    "displayName": "Maaseik (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Mechelen",
+    "displayName": "Mechelen (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Marche-en-Famenne",
+    "displayName": "Marche-en-Famenne (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Mons",
+    "displayName": "Mons (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Mouscron",
+    "displayName": "Mouscron (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Namur",
+    "displayName": "Namur (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Neufchâteau",
+    "displayName": "Neufchâteau (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Nivelles",
+    "displayName": "Nivelles (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Oostend",
+    "displayName": "Oostend (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Philippeville",
+    "displayName": "Philippeville (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Roeselare",
+    "displayName": "Roeselare (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Sint-Niklaas",
+    "displayName": "Sint-Niklaas (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Soignies",
+    "displayName": "Soignies (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Dendermonde",
+    "displayName": "Dendermonde (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Thuin",
+    "displayName": "Thuin (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Tielt",
+    "displayName": "Tielt (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Tongeren",
+    "displayName": "Tongeren (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Tournai",
+    "displayName": "Tournai (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Turnhout",
+    "displayName": "Turnhout (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Verviers",
+    "displayName": "Verviers (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Virton",
+    "displayName": "Virton (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Waremme",
+    "displayName": "Waremme (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Ieper",
+    "displayName": "Ieper (District)",
+    "type": "DISTRICT"
+  },
+  {
+    "id": "Antwerp",
+    "displayName": "Antwerp (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "Flemish Brabant",
+    "displayName": "Flemish Brabant (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "Walloon Brabant",
+    "displayName": "Walloon Brabant (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "Brussels",
+    "displayName": "Brussels (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "West Flanders",
+    "displayName": "West Flanders (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "East Flanders",
+    "displayName": "East Flanders (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "Hainaut",
+    "displayName": "Hainaut (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "Li\u00e8ge",
+    "displayName": "Li\u00e8ge (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "Limburg",
+    "displayName": "Limburg (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "Luxembourg",
+    "displayName": "Luxembourg (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "Namur",
+    "displayName": "Namur (Province)",
+    "type": "PROVINCE"
+  },
+  {
+    "id": "1000",
+    "displayName": "1000 - Brussels City",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1020",
+    "displayName": "1020 - Laeken",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1030",
+    "displayName": "1030 - Schaerbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1040",
+    "displayName": "1040 - Etterbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1050",
+    "displayName": "1050 - Brussel-Louise, Ixelles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1060",
+    "displayName": "1060 - St-Gilles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1070",
+    "displayName": "1070 - Anderlecht",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1080",
+    "displayName": "1080 - Molenbeek-St-Jean",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1081",
+    "displayName": "1081 - Koekelberg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1082",
+    "displayName": "1082 - Berchem-Ste-Agathe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1083",
+    "displayName": "1083 - Ganshoren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1090",
+    "displayName": "1090 - Jette",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1120",
+    "displayName": "1120 - Neder-over-Heembeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1130",
+    "displayName": "1130 - Haren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1140",
+    "displayName": "1140 - Evere",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1150",
+    "displayName": "1150 - Woluwe-St-Pierre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1160",
+    "displayName": "1160 - Auderghem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1170",
+    "displayName": "1170 - Watermael-Boitsfort",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1180",
+    "displayName": "1180 - Uccle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1190",
+    "displayName": "1190 - Forest",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1200",
+    "displayName": "1200 - Woluwe-St-Lambert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1210",
+    "displayName": "1210 - St-Josse-Ten-Noode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1300",
+    "displayName": "1300 - Wavre, Limal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1301",
+    "displayName": "1301 - Bierges",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1310",
+    "displayName": "1310 - La Hulpe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1315",
+    "displayName": "1315 - Roux-Miroir, Glimes, Piétrebais, Incourt, Opprebais",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1320",
+    "displayName": "1320 - Hamme-Mille, L'Ecluse, Tourinnes-la-Grosse, Nodebais, Beauvechain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1325",
+    "displayName": "1325 - Dion-Valmont, Longueville, Chaumont-Gistoux, Bonlez, Corroy-le-Grand",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1330",
+    "displayName": "1330 - Rixensart",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1331",
+    "displayName": "1331 - Rosières",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1332",
+    "displayName": "1332 - Genval",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1340",
+    "displayName": "1340 - Louvain-La-Neuve, Ottignies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1341",
+    "displayName": "1341 - Céroux-Mousty",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1342",
+    "displayName": "1342 - Limelette",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1348",
+    "displayName": "1348 - Louvain-La-Neuve",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1350",
+    "displayName": "1350 - Enines, Folx-les-Caves, Orp-le-Grand, Marilles, Noduwez, Jauche, Orp-Jauche, Jandrain-Jandrenouille",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1357",
+    "displayName": "1357 - Linsmeau, Neerheylissem, Opheylissem, Hélècine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1360",
+    "displayName": "1360 - Orbais, Thorembais-les-Béguines, Malèves-Ste-Marie-Wastines, Perwez, Thorembais-St-Trond",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1367",
+    "displayName": "1367 - Geest-Petit-Rosière, Ramillies, Gérompont, Grand-Rosière-Hottomont, Bomal, Mont-St-André, Huppaye, Autre-Eglise",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1370",
+    "displayName": "1370 - Jodoigne, Dongelberg, Piétrain, St-Jean-Geest, Mélin, Zétrud-Lumay, Jodoigne-Souveraine, Jauchelette, St-Remy-Geest, Lathuy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1380",
+    "displayName": "1380 - Ohain, Chapelle-St-Lambert, Couture-St-Germain, Lasne, Plancenoit, Maransart",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1390",
+    "displayName": "1390 - Archennes, Biez, Nethen, Grez-Doiceau, Bossut-Gottechain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1400",
+    "displayName": "1400 - Nivelles, Monstreux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1401",
+    "displayName": "1401 - Baulers",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1402",
+    "displayName": "1402 - Thines",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1404",
+    "displayName": "1404 - Bornival",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1410",
+    "displayName": "1410 - Waterloo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1420",
+    "displayName": "1420 - Braine-l'Alleud",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1421",
+    "displayName": "1421 - Ophain-Bois-Seigneur-Isaac",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1428",
+    "displayName": "1428 - Lillois-Witterzée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1430",
+    "displayName": "1430 - Bierghes, Rebecq-Rognon, Quenast",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1435",
+    "displayName": "1435 - Corbais, Hévillers, Mont-St-Guibert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1440",
+    "displayName": "1440 - Braine-le-Chateau, Wauthier-Braine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1450",
+    "displayName": "1450 - Cortil-Noirmont, Chastre -Villeroux Blanmont, Gentinnes, Chastre, St-Géry",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1457",
+    "displayName": "1457 - Nil-St-Vincent-St-Martin, Walhain-St-Paul, Tourinnes-St-Lambert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1460",
+    "displayName": "1460 - Virginal-Samme, Ittre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1461",
+    "displayName": "1461 - Haut-Ittre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1470",
+    "displayName": "1470 - Bousval, Baisy-Thy, Genappe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1471",
+    "displayName": "1471 - Loupoigne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1472",
+    "displayName": "1472 - Vieux-Genappe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1473",
+    "displayName": "1473 - Glabais",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1474",
+    "displayName": "1474 - Ways",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1476",
+    "displayName": "1476 - Houtain-le-Val",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1480",
+    "displayName": "1480 - Clabecq, Saintes, Tubize, Oisquercq",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1490",
+    "displayName": "1490 - Court-St-Etienne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1495",
+    "displayName": "1495 - Mellery, Villers-la-Ville, Tilly, Marbais, Sart-Dames-Avelines",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1500",
+    "displayName": "1500 - Halle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1501",
+    "displayName": "1501 - Buizingen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1502",
+    "displayName": "1502 - Lembeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1540",
+    "displayName": "1540 - Herfelingen, Herne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1541",
+    "displayName": "1541 - St-Pieters-Kapelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1547",
+    "displayName": "1547 - Bever",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1560",
+    "displayName": "1560 - Hoeilaart",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1570",
+    "displayName": "1570 - Galmaarden, Vollezele, Tollembeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1600",
+    "displayName": "1600 - St-Laureins-Berchem, St-Pieters-Leeuw, Oudenaken",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1601",
+    "displayName": "1601 - Ruisbroek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1602",
+    "displayName": "1602 - Vlezenbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1620",
+    "displayName": "1620 - Drogenbos",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1630",
+    "displayName": "1630 - Linkebeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1640",
+    "displayName": "1640 - St-Genesius-Rode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1650",
+    "displayName": "1650 - Beersel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1651",
+    "displayName": "1651 - Lot",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1652",
+    "displayName": "1652 - Alsemberg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1653",
+    "displayName": "1653 - Dworp",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1654",
+    "displayName": "1654 - Huizingen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1670",
+    "displayName": "1670 - Heikruis, Bogaarden, Pepingen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1671",
+    "displayName": "1671 - Elingen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1673",
+    "displayName": "1673 - Beert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1674",
+    "displayName": "1674 - Bellingen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1700",
+    "displayName": "1700 - Dilbeek, St-Ulriks-Kapelle, St-Martens-Bodegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1701",
+    "displayName": "1701 - Itterbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1702",
+    "displayName": "1702 - Groot-Bijgaarden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1703",
+    "displayName": "1703 - Schepdaal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1730",
+    "displayName": "1730 - Kobbegem, Mollem, Asse, Bekkerzeel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1731",
+    "displayName": "1731 - Zellik, Relegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1740",
+    "displayName": "1740 - Ternat",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1741",
+    "displayName": "1741 - Wambeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1742",
+    "displayName": "1742 - St-Katherina-Lombeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1745",
+    "displayName": "1745 - Opwijk, Mazenzele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1750",
+    "displayName": "1750 - St-Martens-Lennik, St-Kwintens-Lennik, Lennik, Gaasbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1755",
+    "displayName": "1755 - Kester, Oetingen, Gooik, Leerbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1760",
+    "displayName": "1760 - Pamel, Onze-Lieve-Vrouw-Lombeek, Roosdaal, Strijtem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1761",
+    "displayName": "1761 - Borchtlombeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1770",
+    "displayName": "1770 - Liedekerke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1780",
+    "displayName": "1780 - Wemmel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1785",
+    "displayName": "1785 - Hamme, Merchtem, Brussegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1790",
+    "displayName": "1790 - Hekelgem, Essene, Teralfene, Affligem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1800",
+    "displayName": "1800 - Koningsloo, Vilvoorde, Peutie",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1820",
+    "displayName": "1820 - Steenokkerzeel, Melsbroek, Perk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1830",
+    "displayName": "1830 - Machelen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1831",
+    "displayName": "1831 - Diegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1840",
+    "displayName": "1840 - Londerzeel, Malderen, Steenhuffel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1850",
+    "displayName": "1850 - Grimbergen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1851",
+    "displayName": "1851 - Humbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1852",
+    "displayName": "1852 - Beigem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1853",
+    "displayName": "1853 - Strombeek-Bever",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1860",
+    "displayName": "1860 - Meise",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1861",
+    "displayName": "1861 - Wolvertem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1880",
+    "displayName": "1880 - Kapelle-op-den-Bos, Nieuwenrode, Ramsdonk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1910",
+    "displayName": "1910 - Berg, Buken, Nederokkerzeel, Kampenhout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1930",
+    "displayName": "1930 - Nossegem, Zaventem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1931",
+    "displayName": "1931 - Brucargo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1932",
+    "displayName": "1932 - St-Stevens-Woluwe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1933",
+    "displayName": "1933 - Sterrebeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1950",
+    "displayName": "1950 - Kraainem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1970",
+    "displayName": "1970 - Wezembeek-Oppem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1980",
+    "displayName": "1980 - Zemst, Eppegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1981",
+    "displayName": "1981 - Hofstade",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "1982",
+    "displayName": "1982 - Weerde, Elewijt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2000",
+    "displayName": "2000 - Antwerp",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2018",
+    "displayName": "2018 - Antwerp 1",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2020",
+    "displayName": "2020 - Antwerp 2",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2030",
+    "displayName": "2030 - Antwerp 3",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2040",
+    "displayName": "2040 - Berendrecht, Zandvliet, Lillo, Antwerp 4",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2050",
+    "displayName": "2050 - Antwerp 5",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2060",
+    "displayName": "2060 - Antwerp 6",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2070",
+    "displayName": "2070 - Burcht, Zwijndrecht",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2100",
+    "displayName": "2100 - Deurne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2110",
+    "displayName": "2110 - Wijnegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2140",
+    "displayName": "2140 - Borgerhout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2150",
+    "displayName": "2150 - Borsbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2160",
+    "displayName": "2160 - Wommelgem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2170",
+    "displayName": "2170 - Merksem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2180",
+    "displayName": "2180 - Ekeren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2200",
+    "displayName": "2200 - Morkhoven, Herentals, Noorderwijk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2220",
+    "displayName": "2220 - Heist-op-den-Berg, Hallaar",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2221",
+    "displayName": "2221 - Booischot",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2222",
+    "displayName": "2222 - Wiekevorst, Itegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2223",
+    "displayName": "2223 - Schriek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2230",
+    "displayName": "2230 - Herselt, Ramsel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2235",
+    "displayName": "2235 - Westmeerbeek, Houtvenne, Hulshout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2240",
+    "displayName": "2240 - Massenhoven, Zandhoven, Viersel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2242",
+    "displayName": "2242 - Pulderbos",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2243",
+    "displayName": "2243 - Pulle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2250",
+    "displayName": "2250 - Olen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2260",
+    "displayName": "2260 - Tongerlo, Zoerle-Parwijs, Westerlo, Oevel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2270",
+    "displayName": "2270 - Herenthout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2275",
+    "displayName": "2275 - Gierle, Wechelderzande, Lille, Poederlee",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2280",
+    "displayName": "2280 - Grobbendonk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2288",
+    "displayName": "2288 - Bouwel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2290",
+    "displayName": "2290 - Vorselaar",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2300",
+    "displayName": "2300 - Turnhout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2310",
+    "displayName": "2310 - Rijkevorsel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2320",
+    "displayName": "2320 - Hoogstraten",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2321",
+    "displayName": "2321 - Meer",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2322",
+    "displayName": "2322 - Minderhout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2323",
+    "displayName": "2323 - Wortel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2328",
+    "displayName": "2328 - Meerle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2330",
+    "displayName": "2330 - Merksplas",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2340",
+    "displayName": "2340 - Vlimmeren, Beerse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2350",
+    "displayName": "2350 - Vosselaar",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2360",
+    "displayName": "2360 - Oud-Turnhout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2370",
+    "displayName": "2370 - Arendonk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2380",
+    "displayName": "2380 - Ravels",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2381",
+    "displayName": "2381 - Weelde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2382",
+    "displayName": "2382 - Poppel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2387",
+    "displayName": "2387 - Baarle-Hertog",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2390",
+    "displayName": "2390 - Malle, Westmalle, Oostmalle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2400",
+    "displayName": "2400 - Mol",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2430",
+    "displayName": "2430 - Vorst, Laakdal, Eindhout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2431",
+    "displayName": "2431 - Varendonk, Veerle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2440",
+    "displayName": "2440 - Geel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2450",
+    "displayName": "2450 - Meerhout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2460",
+    "displayName": "2460 - Lichtaart, Tielen, Kasterlee",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2470",
+    "displayName": "2470 - Retie",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2480",
+    "displayName": "2480 - Dessel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2490",
+    "displayName": "2490 - Balen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2491",
+    "displayName": "2491 - Olmen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2500",
+    "displayName": "2500 - Lier, Koningshooikt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2520",
+    "displayName": "2520 - Emblem, Broechem, Ranst, Oelegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2530",
+    "displayName": "2530 - Boechout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2531",
+    "displayName": "2531 - Vremde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2540",
+    "displayName": "2540 - Hove",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2547",
+    "displayName": "2547 - Lint",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2550",
+    "displayName": "2550 - Waarloos, Kontich",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2560",
+    "displayName": "2560 - Bevel, Kessel, Nijlen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2570",
+    "displayName": "2570 - Duffel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2580",
+    "displayName": "2580 - Beerzel, Putte",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2590",
+    "displayName": "2590 - Gestel, Berlaar",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2600",
+    "displayName": "2600 - Berchem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2610",
+    "displayName": "2610 - Wilrijk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2620",
+    "displayName": "2620 - Hemiksem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2627",
+    "displayName": "2627 - Schelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2630",
+    "displayName": "2630 - Aartselaar",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2640",
+    "displayName": "2640 - Mortsel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2650",
+    "displayName": "2650 - Edegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2660",
+    "displayName": "2660 - Hoboken",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2800",
+    "displayName": "2800 - Walem, Mechelen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2801",
+    "displayName": "2801 - Heffen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2811",
+    "displayName": "2811 - Hombeek, Leest",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2812",
+    "displayName": "2812 - Muizen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2820",
+    "displayName": "2820 - Rijmenam, Bonheiden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2830",
+    "displayName": "2830 - Willebroek, Heindonk, Blaasveld, Tisselt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2840",
+    "displayName": "2840 - Rumst, Terhagen, Reet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2845",
+    "displayName": "2845 - Niel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2850",
+    "displayName": "2850 - Boom",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2860",
+    "displayName": "2860 - St-Katelijne-Waver",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2861",
+    "displayName": "2861 - Onze-Lieve-Vrouw-Waver",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2870",
+    "displayName": "2870 - Ruisbroek, Breendonk, Puurs, Liezele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2880",
+    "displayName": "2880 - Hingene, Weert, Marikerke, Bornem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2890",
+    "displayName": "2890 - Oppuurs, St-Amands, Lippelo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2900",
+    "displayName": "2900 - Schoten",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2910",
+    "displayName": "2910 - Essen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2920",
+    "displayName": "2920 - Kalmthout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2930",
+    "displayName": "2930 - Brasschaat",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2940",
+    "displayName": "2940 - Hoevenen, Stabroek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2950",
+    "displayName": "2950 - Kapellen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2960",
+    "displayName": "2960 - St-Lenaerts, Brecht, St-Job-in-'t-Goor",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2970",
+    "displayName": "2970 - Schilde, 's Gravenwezel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2980",
+    "displayName": "2980 - Zoersel, Halle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "2990",
+    "displayName": "2990 - Loenhout, Wuustwezel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3000",
+    "displayName": "3000 - Leuven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3001",
+    "displayName": "3001 - Heverlee",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3010",
+    "displayName": "3010 - Kessel-Lo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3012",
+    "displayName": "3012 - Wilsele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3018",
+    "displayName": "3018 - Wijgmaal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3020",
+    "displayName": "3020 - Winksele, Veltem-Beisem, Herent",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3040",
+    "displayName": "3040 - Loonbeek, St-Agatha-Rode, Huldenberg, Ottenburg, Neerijse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3050",
+    "displayName": "3050 - Oud-Heverlee",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3051",
+    "displayName": "3051 - St-Joris-Weert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3052",
+    "displayName": "3052 - Blanden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3053",
+    "displayName": "3053 - Haasrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3054",
+    "displayName": "3054 - Vaalbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3060",
+    "displayName": "3060 - Korbeek-Dijle, Bertem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3061",
+    "displayName": "3061 - Leefdaal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3070",
+    "displayName": "3070 - Kortenberg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3071",
+    "displayName": "3071 - Erps-Kwerps",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3078",
+    "displayName": "3078 - Meerbeek, Everberg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3080",
+    "displayName": "3080 - Vossem, Tervuren, Duisburg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3090",
+    "displayName": "3090 - Overijse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3110",
+    "displayName": "3110 - Rotselaar",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3111",
+    "displayName": "3111 - Wezemaal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3118",
+    "displayName": "3118 - Werchter",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3120",
+    "displayName": "3120 - Tremelo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3128",
+    "displayName": "3128 - Baal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3130",
+    "displayName": "3130 - Betekom, Begijnendijk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3140",
+    "displayName": "3140 - Keerbergen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3150",
+    "displayName": "3150 - Wespelaar, Haacht, Tildonk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3190",
+    "displayName": "3190 - Boortmeerbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3191",
+    "displayName": "3191 - Hever",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3200",
+    "displayName": "3200 - Aarschot, Gelrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3201",
+    "displayName": "3201 - Langdorp",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3202",
+    "displayName": "3202 - Rillaar",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3210",
+    "displayName": "3210 - Lubbeek, Linden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3211",
+    "displayName": "3211 - Binkom",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3212",
+    "displayName": "3212 - Pellenberg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3220",
+    "displayName": "3220 - St-Pieters-Rode, Kortrijk-Dutsel, Holsbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3221",
+    "displayName": "3221 - Nieuwrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3270",
+    "displayName": "3270 - Scherpenheuvel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3271",
+    "displayName": "3271 - Averbode, Zichem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3272",
+    "displayName": "3272 - Testelt, Messelbroek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3290",
+    "displayName": "3290 - Deurne, Webbekom, Schaffen, Diest",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3293",
+    "displayName": "3293 - Kaggevinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3294",
+    "displayName": "3294 - Molenstede",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3300",
+    "displayName": "3300 - Bost, Vissenaken, St-Margriete-houtem, Oorbeek, Kumtich, Tienen, Oplinter, Goetsenhoven, Hakendover",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3320",
+    "displayName": "3320 - Meldert, Hoegaarden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3321",
+    "displayName": "3321 - Outgaarden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3350",
+    "displayName": "3350 - Neerlinter, Linter, Neerhespen, Overhespen, Dourbes, Melkwezer, Wommersom, Orsmaal-Gussenhoven, Drieslinter",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3360",
+    "displayName": "3360 - Korbeek-Lo, Lovenjoel, Opvelp, Bierbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3370",
+    "displayName": "3370 - Neervelp, Kerkom, Willebringen, Boutersem, Vertrijk, Roosbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3380",
+    "displayName": "3380 - Bunsbeek, Glabbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3381",
+    "displayName": "3381 - Kapellen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3384",
+    "displayName": "3384 - Attenrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3390",
+    "displayName": "3390 - Tielt, Tielt-Winge, St-Joris-Winge, Houwaart",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3391",
+    "displayName": "3391 - Meensel-Kiezegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3400",
+    "displayName": "3400 - Laar, Eliksem, Landen, Rumsdorp, Overwinden, Neerwinden, Wange, Ezemaal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3401",
+    "displayName": "3401 - Wezeren, Walshoutem, Waasmont, Walsbets",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3404",
+    "displayName": "3404 - Neerlanden, Attenhoven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3440",
+    "displayName": "3440 - Helen-bos, Zoutleeuw, Halle-Booienhoven, Dormaal, Budingen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3450",
+    "displayName": "3450 - Geetbets, Grazen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3454",
+    "displayName": "3454 - Rummen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3460",
+    "displayName": "3460 - Bekkevoort, Assent",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3461",
+    "displayName": "3461 - Molenbeek-Wersbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3470",
+    "displayName": "3470 - St-Margriete-Houtem, Ransberg, Kortenaken",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3471",
+    "displayName": "3471 - Hoeleden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3472",
+    "displayName": "3472 - Kersbeek-Miskom",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3473",
+    "displayName": "3473 - Waanrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3500",
+    "displayName": "3500 - Hasselt, St-Lambrechts-Herk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3501",
+    "displayName": "3501 - Wimmertingen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3510",
+    "displayName": "3510 - Spalbeek, Kermt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3511",
+    "displayName": "3511 - Kuringen, Stokrooie",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3512",
+    "displayName": "3512 - Stevoort",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3520",
+    "displayName": "3520 - Zonhoven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3530",
+    "displayName": "3530 - Helchteren, Houthalen-Helchteren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3540",
+    "displayName": "3540 - Donk, Berbroek, Herk-de-Stad, Schulen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3545",
+    "displayName": "3545 - Halen, Zelem, Loksbergen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3550",
+    "displayName": "3550 - Heusden-Zolder, Zolder",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3560",
+    "displayName": "3560 - Linkhout, Lummen, Meldert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3570",
+    "displayName": "3570 - Alken",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3580",
+    "displayName": "3580 - Beringen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3581",
+    "displayName": "3581 - Beverlo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3582",
+    "displayName": "3582 - Koersel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3583",
+    "displayName": "3583 - Paal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3590",
+    "displayName": "3590 - Diepenbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3600",
+    "displayName": "3600 - Genk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3620",
+    "displayName": "3620 - Veldwezelt, Gellik, Lanaken, Neerharen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3621",
+    "displayName": "3621 - Rekem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3630",
+    "displayName": "3630 - Leut, Meeswijk, Eisden, Vucht, Maasmechelen, Opgrimbie",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3631",
+    "displayName": "3631 - Boorsem, Uikhoven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3638",
+    "displayName": "3638 - Mechelen-aan-de-Maas",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3640",
+    "displayName": "3640 - Kessenich, Molenbeersel, Ophoven, Kinrooi",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3650",
+    "displayName": "3650 - Stokkem, Rotem, Elen, Lanklaar, Dilsen, Dilsen-Stokkem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3660",
+    "displayName": "3660 - Opglabbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3665",
+    "displayName": "3665 - As",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3668",
+    "displayName": "3668 - Niel-bij-As",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3670",
+    "displayName": "3670 - Ellikom, Wijshagen, Meeuwen, Meeuwen-Gruitrode, Neerglabbeek, Gruitrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3680",
+    "displayName": "3680 - Maaseik, Neeroeteren, Opoeteren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3690",
+    "displayName": "3690 - Zutendaal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3700",
+    "displayName": "3700 - Sluizen, Diets-Heur, Berg, Koninksem, Tongeren, Overrepen, Vreren, Rutten, Riksingen, Neerrepen, Mal, Lauw, Nerem, Henis, 's Herenelderen, Haren, Kolmont, Widooie, Piringen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3717",
+    "displayName": "3717 - Herstappe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3720",
+    "displayName": "3720 - Kortessem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3721",
+    "displayName": "3721 - Vliermaalroot",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3722",
+    "displayName": "3722 - Wintershoven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3723",
+    "displayName": "3723 - Guigoven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3724",
+    "displayName": "3724 - Vliermaal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3730",
+    "displayName": "3730 - Werm, Hoeselt, St-Huibrechts-Hern, Romershoven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3732",
+    "displayName": "3732 - Schalkhoven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3740",
+    "displayName": "3740 - Hees, Kleine-Spouwen, Bilzen, Rosmeer, Beverst, Grote-Spouwen, Munsterbilzen, Waltwilder, Mopertingen, Eigenbilzen, Rijkhoven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3742",
+    "displayName": "3742 - Martenslinde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3746",
+    "displayName": "3746 - Hoelbeek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3770",
+    "displayName": "3770 - Membruggen, Zichen-Zussen-Bolder, Millen, Vroenhoven, Val-meer, Herderen, Vlijtingen, Genoelselderen, Riemst, Kanne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3790",
+    "displayName": "3790 - Moelingen, Moelingen, Fourons, St-Martens-Voeren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3791",
+    "displayName": "3791 - Remersdaal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3792",
+    "displayName": "3792 - St-Pieters-Voeren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3793",
+    "displayName": "3793 - Teuven",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3798",
+    "displayName": "3798 - 's Gravenvoeren, Voeren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3800",
+    "displayName": "3800 - Engelmanshoven, Aalst, Halmaal, St-Truiden, Ordingen, Brustem, Zepperen, Groot-Gelmen, Kerkom-bij-St-Truiden, Gelinden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3803",
+    "displayName": "3803 - Runkelen, Duras, Wilderen, Gorsem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3806",
+    "displayName": "3806 - Velm",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3830",
+    "displayName": "3830 - Wellen, Berlingen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3831",
+    "displayName": "3831 - Herten",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3840",
+    "displayName": "3840 - Groot-Loon, Voort, Borgloon, Gors-Opleeuw, Gotem, Rijkel, Haren, Hoepertingen, Kerniel, Kuttekoven, Kolmont, Hendrieken, Bommershoven, Broekom, Jesseren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3850",
+    "displayName": "3850 - Kozen, Binderveld, Wijer, Nieuwerkerken",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3870",
+    "displayName": "3870 - Mechelen-Bovelingen, Klein-Gelmen, Heks, Veulen, Batsheers, Mettekoven, Bovelingen, Roclenge-Looz, Horpmaal, Heers, Opheers, Gutschoven, Vechtmaal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3890",
+    "displayName": "3890 - Niel-bij-St-Truiden, Montenaken, Vorsen, Boekhout, Jeuk, Kortijs, Gingelom",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3891",
+    "displayName": "3891 - Buvingen, Mielen-boven-Aalst, Borlo, Muizen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3900",
+    "displayName": "3900 - Overpelt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3910",
+    "displayName": "3910 - St-Huibrechts-Lile, Neerpelt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3920",
+    "displayName": "3920 - Lommel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3930",
+    "displayName": "3930 - Achel, Hamont-Achel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3940",
+    "displayName": "3940 - Hechtel-Eksel, Hechtel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3941",
+    "displayName": "3941 - Eksel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3945",
+    "displayName": "3945 - Oostham, Kwaadmechelen, Ham",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3950",
+    "displayName": "3950 - Bocholt, Kaulille, Reppel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3960",
+    "displayName": "3960 - Gerdingen, Bree, Tongerlo, Opitter, Beek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3970",
+    "displayName": "3970 - Leopoldsburg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3971",
+    "displayName": "3971 - Heppen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3980",
+    "displayName": "3980 - Tessenderlo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "3990",
+    "displayName": "3990 - Wijchmaal, Peer, Grote-Brogel, Kleine-Brogel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4000",
+    "displayName": "4000 - Rocourt, Glain, Liège",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4020",
+    "displayName": "4020 - Jupille-sur-Meuse, Wandre, Bressoux, Liège 2",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4030",
+    "displayName": "4030 - Grivegnée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4031",
+    "displayName": "4031 - Angleur",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4032",
+    "displayName": "4032 - Chênée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4040",
+    "displayName": "4040 - Herstal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4041",
+    "displayName": "4041 - Vottem, Milmort",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4042",
+    "displayName": "4042 - Liers",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4050",
+    "displayName": "4050 - Chaudfontaine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4051",
+    "displayName": "4051 - Vaux-sous-Chèvremont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4052",
+    "displayName": "4052 - Beaufays",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4053",
+    "displayName": "4053 - Embourg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4100",
+    "displayName": "4100 - Boncelles, Seraing",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4101",
+    "displayName": "4101 - Jemeppe-sur-Meuse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4102",
+    "displayName": "4102 - Ougrée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4120",
+    "displayName": "4120 - Neupré, Rotheux-Rimière, Ehein/Neupré",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4121",
+    "displayName": "4121 - Neuville-en-Condroz",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4122",
+    "displayName": "4122 - Plainevaux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4130",
+    "displayName": "4130 - Tilff, Esneux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4140",
+    "displayName": "4140 - Dolembreux, Rouvreux, Sprimont, Gomzé-Andoumont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4141",
+    "displayName": "4141 - Louveigné",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4160",
+    "displayName": "4160 - Anthisnes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4161",
+    "displayName": "4161 - Villers-aux-Tours",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4162",
+    "displayName": "4162 - Hody",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4163",
+    "displayName": "4163 - Tavier",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4170",
+    "displayName": "4170 - Comblain-au-Pont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4171",
+    "displayName": "4171 - Poulseur",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4180",
+    "displayName": "4180 - Hamoir, Comblain-Fairon, Comblain-la-Tour",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4181",
+    "displayName": "4181 - Filot",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4190",
+    "displayName": "4190 - Vieuxville, My, Ferrieres, Xhoris, Werbomont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4210",
+    "displayName": "4210 - Hannêche, Lamontzée, Marneffe, Oteppe, Burdinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4217",
+    "displayName": "4217 - Waret-l'Evèque, Héron, Lavoir",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4218",
+    "displayName": "4218 - Couthuin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4219",
+    "displayName": "4219 - Acosse, Ambresin, Meeffe, Wasseiges",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4250",
+    "displayName": "4250 - Geer, Lens-St-Servais, Boëlhe, Hollogne-sur-Geer",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4252",
+    "displayName": "4252 - Omal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4253",
+    "displayName": "4253 - Darion",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4254",
+    "displayName": "4254 - Ligney",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4257",
+    "displayName": "4257 - Rosoux-Crenwick, Corswarem, Berloz",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4260",
+    "displayName": "4260 - Avennes, Fallais, Ciplet, Ville-en-Hesbaye, Braives, Fumal",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4261",
+    "displayName": "4261 - Latinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4263",
+    "displayName": "4263 - Tourinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4280",
+    "displayName": "4280 - Lens-St-Remy, Moxhe, Merdorp, Poucet, Hannut, Petit-Hallet, Avin, Wansin, Blehen, Thisnes, Avemas-le-Bauduin, Crehen, Trognée, Cras-Avernas, Abolens, Grand-Hallet, Bertrée, Villers-le-Peuplier",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4287",
+    "displayName": "4287 - Pellaines, Lincent, Racour",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4300",
+    "displayName": "4300 - Lantremange, Waremme, Bovenistier, Bieret, Grand-Axhe, Oleye, Bettincourt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4317",
+    "displayName": "4317 - Viemme, Faimes, Borlez, Aineffe, Les Waleffes, Celles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4340",
+    "displayName": "4340 - Villers-l'Evêque, Awans, Fooz, Othée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4342",
+    "displayName": "4342 - Hognoul",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4347",
+    "displayName": "4347 - Rodoux, Voroux-Goreux, Noville, Freloux, Fexhe-le-Haut-Clocher",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4350",
+    "displayName": "4350 - Lamine, Momalle, Remicourt, Pousset",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4351",
+    "displayName": "4351 - Hodeige",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4357",
+    "displayName": "4357 - Donceel, Jeneffe, Haneffe, Limont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4360",
+    "displayName": "4360 - Grandville, Oreye, Lens-Sur-Geer, Otrange, Bergilers",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4367",
+    "displayName": "4367 - Kemexhe, Thys, Fize-Le-Marsal, Crisnée, Odeur",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4400",
+    "displayName": "4400 - Mons-lez-Liège, Gleixhe, Flémalle-Haute, Flémalle-Grande, Flémalle, Chokier, Awirs, Ivoz-Ramet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4420",
+    "displayName": "4420 - Montegnée, Tilleur, Saint-Nicolas",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4430",
+    "displayName": "4430 - Ans",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4431",
+    "displayName": "4431 - Loncin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4432",
+    "displayName": "4432 - Xhendremael, Alleur",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4450",
+    "displayName": "4450 - Juprelle, Lantin, Slins",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4451",
+    "displayName": "4451 - Voroux-lez-Liers",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4452",
+    "displayName": "4452 - Paifve, Wihogne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4453",
+    "displayName": "4453 - Villers-St-Siméon",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4458",
+    "displayName": "4458 - Fexhe-Slins",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4460",
+    "displayName": "4460 - Grace-Hollogne, Grâce-Berleur, Horion-Hozémont, Hollogne-aux-Pierres, Velroux, Bierset",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4470",
+    "displayName": "4470 - St-Georges-sur-Meuse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4480",
+    "displayName": "4480 - Hermalle-sous-Huy, Ehein-Engis, Clermont-sous-Huy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4500",
+    "displayName": "4500 - Tihange, Huy, Ben-ahin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4520",
+    "displayName": "4520 - Vinalmont, Wanze, Antheit, Bas-Oha, Huccorgne, Moha",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4530",
+    "displayName": "4530 - Warnant-Dreye, Fize-Fontaine, Vaux-et-Borset, Vieux-Waleffe, Villers-le-Bouillet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4537",
+    "displayName": "4537 - Seraing-le-Château, Chapon-Seraing, Verlaine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4540",
+    "displayName": "4540 - Ampsin, Amay, Jehay, Flône, Ombret",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4550",
+    "displayName": "4550 - Villers-le-Temple, St-Séverin, Yernée-Fraineux, Nandrin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4557",
+    "displayName": "4557 - Soheit-Tinlot, Tinlot, Fraiture, Abée, Seny, Ramelot",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4560",
+    "displayName": "4560 - Ocquier, Terwagne, Clavier, Bois-et-Borsu, Paihe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4570",
+    "displayName": "4570 - Vyle-et-Tharoul, Marchin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4577",
+    "displayName": "4577 - Outrelouxhe, Vierset-Barse, Strée-lez-Huy, Modave",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4590",
+    "displayName": "4590 - Warzée, Ouffet, Ellemelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4600",
+    "displayName": "4600 - Visé, Richelle, Lixhe, Lanaye",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4601",
+    "displayName": "4601 - Argenteau",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4602",
+    "displayName": "4602 - Cheratte",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4606",
+    "displayName": "4606 - St-André",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4607",
+    "displayName": "4607 - Feneur, Mortroux, Dalhem, Berneau, Bombaye",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4608",
+    "displayName": "4608 - Warsage, Neufchâteau",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4610",
+    "displayName": "4610 - Bellaire, Beyne-Heusay, Queue-du-Bois",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4620",
+    "displayName": "4620 - Fléron",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4621",
+    "displayName": "4621 - Retinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4623",
+    "displayName": "4623 - Magnée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4624",
+    "displayName": "4624 - Romsée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4630",
+    "displayName": "4630 - Ayeneux, Micheroux, Soumagne, Tignée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4631",
+    "displayName": "4631 - Evegnée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4632",
+    "displayName": "4632 - Cerexhe-Heuseux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4633",
+    "displayName": "4633 - Melen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4650",
+    "displayName": "4650 - Julémont, Chaineux, Herve, Grand-Rechain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4651",
+    "displayName": "4651 - Battice",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4652",
+    "displayName": "4652 - Xhendelesse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4653",
+    "displayName": "4653 - Bolland",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4654",
+    "displayName": "4654 - Charneux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4670",
+    "displayName": "4670 - Trembleur, Mortier, Blegny",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4671",
+    "displayName": "4671 - Housse, Saive, Barchon",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4672",
+    "displayName": "4672 - St-Remy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4680",
+    "displayName": "4680 - Hermée, Oupeye",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4681",
+    "displayName": "4681 - Hermalle-sous-Argenteau",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4682",
+    "displayName": "4682 - Houtain-St-Siméon, Heure-le-Romain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4683",
+    "displayName": "4683 - Vivegnis",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4684",
+    "displayName": "4684 - Haccourt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4690",
+    "displayName": "4690 - Roclenge-sur-Geer, Wonck, Bassenge, Glons, Eben-Emael, Boirs",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4700",
+    "displayName": "4700 - Eupen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4701",
+    "displayName": "4701 - Kettenis",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4710",
+    "displayName": "4710 - Lontzen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4711",
+    "displayName": "4711 - Walhom",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4720",
+    "displayName": "4720 - La Calamine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4721",
+    "displayName": "4721 - Neu-Moresnet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4728",
+    "displayName": "4728 - Hergenrath",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4730",
+    "displayName": "4730 - Hauset, Raeren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4731",
+    "displayName": "4731 - Eynatten",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4750",
+    "displayName": "4750 - Butgenbach, Elsenborn",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4760",
+    "displayName": "4760 - Manderfeld, Büllingen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4761",
+    "displayName": "4761 - Rocherath",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4770",
+    "displayName": "4770 - Amblève, Meyrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4771",
+    "displayName": "4771 - Heppenbach",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4780",
+    "displayName": "4780 - St-Vith, Recht",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4782",
+    "displayName": "4782 - Schönberg, Schoenberg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4783",
+    "displayName": "4783 - Lommersweiler",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4784",
+    "displayName": "4784 - Crombach",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4790",
+    "displayName": "4790 - Reuland, Burg-Reuland",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4791",
+    "displayName": "4791 - Thommen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4800",
+    "displayName": "4800 - Petit-Rechain, Verviers, Ensival, Lambermont, Polleur",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4801",
+    "displayName": "4801 - Stembert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4802",
+    "displayName": "4802 - Heusy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4820",
+    "displayName": "4820 - Dison",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4821",
+    "displayName": "4821 - Andrimont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4830",
+    "displayName": "4830 - Limbourg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4831",
+    "displayName": "4831 - Bilstain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4834",
+    "displayName": "4834 - Goé",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4837",
+    "displayName": "4837 - Baelen, Membach",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4840",
+    "displayName": "4840 - Welkenraedt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4841",
+    "displayName": "4841 - Henri-Chapelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4845",
+    "displayName": "4845 - Jalhay, Sart-lez-Spa",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4850",
+    "displayName": "4850 - Moresnet, Montzen, Plombieres",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4851",
+    "displayName": "4851 - Sippenaeken, Gemmenich",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4852",
+    "displayName": "4852 - Hombourg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4860",
+    "displayName": "4860 - Pepinster, Cornesse, Wegnez",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4861",
+    "displayName": "4861 - Soiron",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4870",
+    "displayName": "4870 - Forêt, Nessonvaux, Fraipont, Trooz",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4877",
+    "displayName": "4877 - Olne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4880",
+    "displayName": "4880 - Aubel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4890",
+    "displayName": "4890 - Clermont, Thimister",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4900",
+    "displayName": "4900 - Spa",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4910",
+    "displayName": "4910 - La Reid, Polleur, Theux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4920",
+    "displayName": "4920 - Sougné-Remouchamps, Aywaille, Ernonheid, Harzé, Louveigné",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4950",
+    "displayName": "4950 - Waimes, Faymonville, Robertville, Sourbrodt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4960",
+    "displayName": "4960 - Bevercé, Bellevaux-Ligneuville, Malmedy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4970",
+    "displayName": "4970 - Francorchamps, Stavelot",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4980",
+    "displayName": "4980 - Wanne, Trois-ponts, Fosse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4983",
+    "displayName": "4983 - Basse-Bodeux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4987",
+    "displayName": "4987 - Chevron, La Gleize, Lorcé, Stoumont, Rahier",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "4990",
+    "displayName": "4990 - Lierneux, Arbrefontaine, Bra",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5000",
+    "displayName": "5000 - Namur, Beez",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5001",
+    "displayName": "5001 - Belgrade",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5002",
+    "displayName": "5002 - St-Servais",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5003",
+    "displayName": "5003 - St-Marc",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5004",
+    "displayName": "5004 - Bouge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5020",
+    "displayName": "5020 - Vedrin, Malonne, Suarlée, Flawinne, Champion, Temploux, Daussoulx",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5021",
+    "displayName": "5021 - Boninne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5022",
+    "displayName": "5022 - Cognelée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5024",
+    "displayName": "5024 - Gelbressée, Marche-les-Dames",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5030",
+    "displayName": "5030 - Beuzet, Grand-Manil, Lonzée, Ernage, Gembloux, Sauvenière",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5031",
+    "displayName": "5031 - Grand-Leez",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5032",
+    "displayName": "5032 - Mazy, Corroy-le-Château, Bossière, Bothey, Isnes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5060",
+    "displayName": "5060 - Velaine-sur-Sambre, Arsimont, Moignelée, Sambreville, Tamines, Falisolle, Auvelais, Keumiée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5070",
+    "displayName": "5070 - Vitrival, Fosses-la-Ville, Le Roux, Les Avins, Sart-St-Laurent, Aisemont, Sart-Eustache",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5080",
+    "displayName": "5080 - Emines, Villers-lez-Heest, La Bruyere, Warisoulx, Rhisnes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5081",
+    "displayName": "5081 - Meux, Bovesse, St-Denis-Bovesse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5100",
+    "displayName": "5100 - Wépion, Wierde, Jambes, Dave, Naninne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5101",
+    "displayName": "5101 - Loyers, Lives-Sur-Meuse, Erpent",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5140",
+    "displayName": "5140 - Boignée, Ligny, Sombreffe, Tongrinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5150",
+    "displayName": "5150 - Soye, Floreffe, Floriffoux, Franière",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5170",
+    "displayName": "5170 - Lustin, Profondeville, Arbre, Lesve, Rivière, Bois-de-Villers",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5190",
+    "displayName": "5190 - Ham-sur-Sambre, Balâtre, Mornimont, St-Martin, Moustier-sur-Sambre, Jemeppe-sur-Sambre, Spy, Onoz",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5300",
+    "displayName": "5300 - Thon, Bonneville, Maizeret, Sclayn, Landenne, Vezin, Seilles, Namêche, Andenne, Coutisse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5310",
+    "displayName": "5310 - Longchamps, Boneffe, Waret-la-Chaussée, Bolinne, Mehaigne, Leuze, Upigny, Eghezée, Noville-sur-Méhaigne, Hanret, Branchon, Taviers, Dhuy, Liernu, St-Germain, Aische-en-Refail",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5330",
+    "displayName": "5330 - Maillen, Assesse, Sart-Bernard",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5332",
+    "displayName": "5332 - Crupet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5333",
+    "displayName": "5333 - Sorinne-la-Longue",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5334",
+    "displayName": "5334 - Florée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5336",
+    "displayName": "5336 - Courrière",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5340",
+    "displayName": "5340 - Gesves, Haltinne, Sorée, Faulx-les-tombes, Mozet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5350",
+    "displayName": "5350 - Ohey, Evelette",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5351",
+    "displayName": "5351 - Haillot",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5352",
+    "displayName": "5352 - Perwez-Haillot",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5353",
+    "displayName": "5353 - Goesnes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5354",
+    "displayName": "5354 - Jallet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5360",
+    "displayName": "5360 - Hamois, Natoye",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5361",
+    "displayName": "5361 - Scy, Mohiville",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5362",
+    "displayName": "5362 - Achet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5363",
+    "displayName": "5363 - Emptinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5364",
+    "displayName": "5364 - Schaltin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5370",
+    "displayName": "5370 - Barvaux-Condroz, Verlée, Porcheresse, Flostoy, Jeneffe, Havelange",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5372",
+    "displayName": "5372 - Méan",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5374",
+    "displayName": "5374 - Maffe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5376",
+    "displayName": "5376 - Miécret",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5377",
+    "displayName": "5377 - Heure, Sinsin, Bonsin, Baillonville, Somme-Leuze, Waillet, Nettinne, Noiseux, Hogne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5380",
+    "displayName": "5380 - Pontillas, Bierwart, Franc-Waret, Cortil-Wodon, Tillier, Hingeon, Hemptinne, Marchovelette, Forville, Fernelmont, Noville-les-Bois",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5500",
+    "displayName": "5500 - Furfooz, Falmignoul, Dréhance, Falmagne, Leffe, Dinant, Bouvignes-sur-Meuse, Anseremme, Wavreille",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5501",
+    "displayName": "5501 - Lisogne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5502",
+    "displayName": "5502 - Thynes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5503",
+    "displayName": "5503 - Sorinnes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5504",
+    "displayName": "5504 - Foy-Notre-Dame",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5520",
+    "displayName": "5520 - Anthée, Onhaye",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5521",
+    "displayName": "5521 - Serville",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5522",
+    "displayName": "5522 - Falaën",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5523",
+    "displayName": "5523 - Weillen, Sommière",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5524",
+    "displayName": "5524 - Gerin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5530",
+    "displayName": "5530 - Evrehailles, Spontin, Yvoir, Houx, Purnode, Godinne, Durnal, Mont, Dorinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5537",
+    "displayName": "5537 - Haut-le-Wastia, Sosoye, Bioul, Warnant, Annevoie-Rouillon, Anhee, Denée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5540",
+    "displayName": "5540 - Hastiere, Waulsort, Hastière-Lavaux, Hermeton-sur-Meuse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5541",
+    "displayName": "5541 - Hastière-par-delà",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5542",
+    "displayName": "5542 - Blaimont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5543",
+    "displayName": "5543 - Heer",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5544",
+    "displayName": "5544 - Agimont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5550",
+    "displayName": "5550 - Vresse-sur-Semois, Pussemange, Orchimont, Bohan, Alle, Chairière, Bagimont, Nafraiture, Sugny, Mouzaive, Membre, Laforêt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5555",
+    "displayName": "5555 - Graide, Monceau-en-Ardenne, Baillamont, Petit-Fays, Bellefontaine, Oizy, Gros-Fays, Bievre, Naomé, Cornimont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5560",
+    "displayName": "5560 - Mesnil-Eglise, Hulsonniaux, Finnevaux, Ciergnon, Houyet, Mesnil-St-Blaise",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5561",
+    "displayName": "5561 - Celles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5562",
+    "displayName": "5562 - Custinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5563",
+    "displayName": "5563 - Hour",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5564",
+    "displayName": "5564 - Wanlin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5570",
+    "displayName": "5570 - Baronville, Vonêche, Winenne, Feschaux, Javingue, Dion, Wancennes, Honnay, Beauraing, Felenne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5571",
+    "displayName": "5571 - Wiesme",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5572",
+    "displayName": "5572 - Focant",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5573",
+    "displayName": "5573 - Martouzin-Neuville",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5574",
+    "displayName": "5574 - Pondrôme",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5575",
+    "displayName": "5575 - Vencimont, Louette-St-Pierre, Patignies, Willerzie, Rienne, Houdremont, Bourseigne-Vieille, Malvoisin, Louette-St-Denis, Bourseigne-Neuve, Sart-Custinne, Gedinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5576",
+    "displayName": "5576 - Froidfontaine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5580",
+    "displayName": "5580 - Mont-Gauthier, Ave-et-Auffe, Buissonville, Han-sur-Lesse, Villers-sur-Lesse, Rochefort, Jemelle, Eprave, Lessive, Lavaux-Ste-Anne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5590",
+    "displayName": "5590 - Pessoux, Serinchamps, Ciney, Achêne, Leignon, Conneux, Haversin, Sovet, Chevetogne, Braibant",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5600",
+    "displayName": "5600 - Jamagne, Philippeville, Roly, Sart-en-Fagne, Merlemont, Vodecée, Omezée, Franchimont, Villers-en-Fagne, Surice, Sautour, Jamiolle, Villers-le-Gambon, Neuville, Fagnolle, Samart, Romedenne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5620",
+    "displayName": "5620 - Hemptinne-lez-Florennes, Florennes, Flavion, Morville, St-Aubin, Corenne, Rosée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5621",
+    "displayName": "5621 - Morialmé, Hanzinne, Hanzinelle, Thy-le-Bauduin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5630",
+    "displayName": "5630 - Daussois, Senzeille, Soumoy, Villers-deux-Eglises, Silenrieux, Cerfontaine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5640",
+    "displayName": "5640 - Biesmerée, St-Gérard, Oret, Biesme, Mettet, Graux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5641",
+    "displayName": "5641 - Furmaux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5644",
+    "displayName": "5644 - Ermeton-sur-Biert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5646",
+    "displayName": "5646 - Stave",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5650",
+    "displayName": "5650 - Chastres, Vogenée, Castillon, Fontenelle, Fraire, Pry, Clermont, Walcourt, Yves-Gomezée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5651",
+    "displayName": "5651 - Thy-le-Château, Somzée, Rognée, Tarcienne, Berzée, Laneffe, Gourdinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5660",
+    "displayName": "5660 - Petite-Chapelle, Boussu-en-Fagne, Brûly, Brûly-de-Pesche, Cul-des-Sarts, Frasnes, Presgaux, Petigny, Mariembourg, Aublain, Gonrieux, Pesche, Couvin, Dailly",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5670",
+    "displayName": "5670 - Nismes, Mazée, Viroinval, Vierves-sur-Viroin, Treignes, Olloy-sur-Viroin, Oignies-en-Thiérache, Le Mesnil",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "5680",
+    "displayName": "5680 - Gimnée, Matagne-la-Petite, Matagne-la-Grande, Doische, Gochenée, Vaucelles, Soulme, Romerée, Niverlée, Vodelée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6000",
+    "displayName": "6000 - Charleroi",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6001",
+    "displayName": "6001 - Marcinelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6010",
+    "displayName": "6010 - Couillet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6020",
+    "displayName": "6020 - Dampremy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6030",
+    "displayName": "6030 - Marchienne-au-Pont, Goutroux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6031",
+    "displayName": "6031 - Monceau-sur-Sambre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6032",
+    "displayName": "6032 - Mont-sur-Marchienne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6040",
+    "displayName": "6040 - Jumet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6041",
+    "displayName": "6041 - Gosselies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6042",
+    "displayName": "6042 - Lodelinsart",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6043",
+    "displayName": "6043 - Ransart",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6044",
+    "displayName": "6044 - Roux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6060",
+    "displayName": "6060 - Gilly",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6061",
+    "displayName": "6061 - Montignies-sur-Sambre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6110",
+    "displayName": "6110 - Montigny-le-Tilleul",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6111",
+    "displayName": "6111 - Landelies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6120",
+    "displayName": "6120 - Jamioulx, Nalinnes, Marbaix, Cour-sur-Heure, Ham-sur-Heure",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6140",
+    "displayName": "6140 - Fontaine-l'Eveque",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6141",
+    "displayName": "6141 - Forchies-la-Marche",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6142",
+    "displayName": "6142 - Leernes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6150",
+    "displayName": "6150 - Anderlues",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6180",
+    "displayName": "6180 - Courcelles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6181",
+    "displayName": "6181 - Gouy-lez-Piéton",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6182",
+    "displayName": "6182 - Souvret",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6183",
+    "displayName": "6183 - Trazegnies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6200",
+    "displayName": "6200 - Châtelet, Bouffioulx, Châtelineau",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6210",
+    "displayName": "6210 - Rêves, Les-Bons-Villers, Frasnes-lez-Gosselies, Wayaux, Villers-Perwin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6211",
+    "displayName": "6211 - Mellet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6220",
+    "displayName": "6220 - Lambusart, Heppignies, Wangenies, Fleurus",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6221",
+    "displayName": "6221 - St-Amand",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6222",
+    "displayName": "6222 - Brye",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6223",
+    "displayName": "6223 - Wagnelée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6224",
+    "displayName": "6224 - Wanfercée-Baulet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6230",
+    "displayName": "6230 - Buzet, Obaix, Thiméon, Viesville, Pont-à-Celles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6238",
+    "displayName": "6238 - Liberchies, Luttre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6240",
+    "displayName": "6240 - Pironchamps, Farciennes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6250",
+    "displayName": "6250 - Roselies, Presles, Aiseau, Pont-de-Loup, Aiseau-Presles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6280",
+    "displayName": "6280 - Loverval, Joncret, Acoz, Gerpinnes, Villers-Poterie, Gougnies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6440",
+    "displayName": "6440 - Froidchapelle, Boussu-lez-Walcourt, Vergnies, Fourbechies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6441",
+    "displayName": "6441 - Erpion",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6460",
+    "displayName": "6460 - Chimay, Villers-la-Tour, Salles, St-Remy, Robechies, Baillièvre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6461",
+    "displayName": "6461 - Virelles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6462",
+    "displayName": "6462 - Vaulx-lez-Chimay",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6463",
+    "displayName": "6463 - Lompret",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6464",
+    "displayName": "6464 - L'Escaillière, Forges, Rièzes, Bourlers, Baileux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6470",
+    "displayName": "6470 - Sautin, Montbliart, Grandrieu, Sivry, Rance, Sivry-rance",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6500",
+    "displayName": "6500 - Leugnies, Renlies, Thirimont, Leval-Chaudeville, Solre-St-Géry, Beaumont, Barbençon",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6511",
+    "displayName": "6511 - Strée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6530",
+    "displayName": "6530 - Leers-et-Fosteau, Thuin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6531",
+    "displayName": "6531 - Biesme-sous-Thuin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6532",
+    "displayName": "6532 - Ragnies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6533",
+    "displayName": "6533 - Biercée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6534",
+    "displayName": "6534 - Gozée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6536",
+    "displayName": "6536 - Donstiennes, Thuillies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6540",
+    "displayName": "6540 - Mont-Ste-Geneviève, Lobbes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6542",
+    "displayName": "6542 - Sars-la-Buissière",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6543",
+    "displayName": "6543 - Bienne-lez-Happart",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6560",
+    "displayName": "6560 - Solre-sur-Sambre, Grand-Reng, Montignies-St-Christophe, Erquelinnes, Hantes-Wihéries, Bersilles-l'abbaye",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6567",
+    "displayName": "6567 - Merbes-le-Chateau, Merbes-Ste-Marie, Labruissière, Fontaine-Valmont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6590",
+    "displayName": "6590 - Momignies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6591",
+    "displayName": "6591 - Macon",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6592",
+    "displayName": "6592 - Monceau-Imbrechies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6593",
+    "displayName": "6593 - Macquenoise",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6594",
+    "displayName": "6594 - Beauwelz",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6596",
+    "displayName": "6596 - Forge-Philippe, Seloignes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6600",
+    "displayName": "6600 - Bastogne, Noville, Longvilly, Villers-la-Bonne-Eau, Wardin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6630",
+    "displayName": "6630 - Martelange",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6637",
+    "displayName": "6637 - Fauvillers, Hollange, Tintange",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6640",
+    "displayName": "6640 - Vaux-sur-Sûre, Sibret, Nives, Hompré, Vaux-lez-Rosières, Morhet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6642",
+    "displayName": "6642 - Juseret",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6660",
+    "displayName": "6660 - Houffalize, Nadrin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6661",
+    "displayName": "6661 - Mont, Tailles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6662",
+    "displayName": "6662 - Tavigny",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6663",
+    "displayName": "6663 - Mabompré",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6666",
+    "displayName": "6666 - Wibrin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6670",
+    "displayName": "6670 - Limerlé",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6671",
+    "displayName": "6671 - Gouvy, Bovigny",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6672",
+    "displayName": "6672 - Beho",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6673",
+    "displayName": "6673 - Cherain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6674",
+    "displayName": "6674 - Montleban",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6680",
+    "displayName": "6680 - Ste-Ode, Amberloup, Tillet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6681",
+    "displayName": "6681 - Lavacherie",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6686",
+    "displayName": "6686 - Flamierge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6687",
+    "displayName": "6687 - Bertogne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6688",
+    "displayName": "6688 - Longchamps",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6690",
+    "displayName": "6690 - Vielsalm, Bihain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6692",
+    "displayName": "6692 - Petit-Thier",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6698",
+    "displayName": "6698 - Grand-Halleux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6700",
+    "displayName": "6700 - Arlon, Toernich, Bonnert, Heinsch",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6704",
+    "displayName": "6704 - Guirsch",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6706",
+    "displayName": "6706 - Autelbas",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6717",
+    "displayName": "6717 - Thiaumont, Attert, Nobressart, Nothomb, Tontelange",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6720",
+    "displayName": "6720 - Habay, Hachy, Habay-la-Neuve",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6721",
+    "displayName": "6721 - Anlier",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6723",
+    "displayName": "6723 - Habay-la-Vieille",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6724",
+    "displayName": "6724 - Houdemont, Marbehan, Rulles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6730",
+    "displayName": "6730 - Tintigny, St-Vincent, Bellefontaine, Rossignol",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6740",
+    "displayName": "6740 - Villers-sur-Semois, Ste-Marie-sur-Semois, Etalle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6741",
+    "displayName": "6741 - Vance",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6742",
+    "displayName": "6742 - Chantemelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6743",
+    "displayName": "6743 - Buzenol",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6747",
+    "displayName": "6747 - Meix-le-Tige, St-Léger, Châtilon",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6750",
+    "displayName": "6750 - Signeulx, Musson, Mussy-la-Ville",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6760",
+    "displayName": "6760 - Virton, Ruette, Bleid, Ethe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6761",
+    "displayName": "6761 - Latour",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6762",
+    "displayName": "6762 - St-Mard",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6767",
+    "displayName": "6767 - Dampicourt, Lamorteau, Rouvroy, Harmoncourt, Torgny",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6769",
+    "displayName": "6769 - Villers-la-Loue, Gérouville, Meix-devant-Virton, Sommethonne, Robelmont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6780",
+    "displayName": "6780 - Hondelange, Wolkrange, Messancy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6781",
+    "displayName": "6781 - Selange",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6782",
+    "displayName": "6782 - Habergy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6790",
+    "displayName": "6790 - Aubange",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6791",
+    "displayName": "6791 - Athus",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6792",
+    "displayName": "6792 - Rachecourt, Halanzy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6800",
+    "displayName": "6800 - Ste-Marie-Chevigny, Moircy, Remagne, Bras, St-Pierre, Libramont-Chevigny, Recogne, Freux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6810",
+    "displayName": "6810 - Jamoigne, Izel, Chiny",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6811",
+    "displayName": "6811 - Les Bulles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6812",
+    "displayName": "6812 - Suxy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6813",
+    "displayName": "6813 - Termes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6820",
+    "displayName": "6820 - Ste-Cécile, Fontenoille, Muno, Florenville",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6821",
+    "displayName": "6821 - Lacuisine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6823",
+    "displayName": "6823 - Villers-devant-Orval",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6824",
+    "displayName": "6824 - Chassepierre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6830",
+    "displayName": "6830 - Rochehaut, Bouillon, Les Hayons, Poupehan",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6831",
+    "displayName": "6831 - Noirefontaine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6832",
+    "displayName": "6832 - Sensenruth",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6833",
+    "displayName": "6833 - Ucimont, Vivy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6834",
+    "displayName": "6834 - Belevaux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6836",
+    "displayName": "6836 - Dohan",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6838",
+    "displayName": "6838 - Corbion",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6840",
+    "displayName": "6840 - Grandvoir, Grapfontaine, Tournay, Neufchâteau, Longlier, Hamipré",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6850",
+    "displayName": "6850 - Paliseul, Carlsbourg, Offagne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6851",
+    "displayName": "6851 - Nollevaux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6852",
+    "displayName": "6852 - Maissin, Opont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6853",
+    "displayName": "6853 - Framont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6856",
+    "displayName": "6856 - Fays-les-veneurs",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6860",
+    "displayName": "6860 - Ebly, Witry, Assenois, Leglise, Mellier",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6870",
+    "displayName": "6870 - St-Hubert, Vesqueville, Mirwart, Awenne, Arville, Hatrival",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6880",
+    "displayName": "6880 - Orgeo, Bertrix, Jehonville, Cugnon, Auby-sur-Semois",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6887",
+    "displayName": "6887 - St-Médard, Straimont, Herbeumont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6890",
+    "displayName": "6890 - Libin, Anloy, Ochamps, Villance, Smuid, Redu, Transinne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6900",
+    "displayName": "6900 - Waha, Marche-en-Famenne, Hargimont, Aye, On, Roy, Humain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6920",
+    "displayName": "6920 - Wellin, Sohier",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6921",
+    "displayName": "6921 - Chanly",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6922",
+    "displayName": "6922 - Halma",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6924",
+    "displayName": "6924 - Lomprez",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6927",
+    "displayName": "6927 - Resteigne, Tellin, Grupont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6929",
+    "displayName": "6929 - Porcheresse, Daverdisse, Gembes, Haut-Fays",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6940",
+    "displayName": "6940 - Durbuy, Grandhan, Wéris, Barvaux-sur-Ourthe, Septon",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6941",
+    "displayName": "6941 - Borlon, Bende, Tohogne, Villers-Ste-Gertrude, Heyd, Izier, Bomal-sur-Ourthe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6950",
+    "displayName": "6950 - Nassogne, Harsin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6951",
+    "displayName": "6951 - Bande",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6952",
+    "displayName": "6952 - Grune",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6953",
+    "displayName": "6953 - Lesterny, Forrières, Masbourg, Ambly",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6960",
+    "displayName": "6960 - Odeigne, Vaux-Chavanne, Dochamps, Malempré, Grandmenil, Manhay, Harre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6970",
+    "displayName": "6970 - Tenneville",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6971",
+    "displayName": "6971 - Champlon",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6972",
+    "displayName": "6972 - Erneuville",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6980",
+    "displayName": "6980 - BeauSt, La Roche-en-Ardenne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6982",
+    "displayName": "6982 - Samrée",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6983",
+    "displayName": "6983 - Ortho",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6984",
+    "displayName": "6984 - Hives",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6986",
+    "displayName": "6986 - Halleux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6987",
+    "displayName": "6987 - Hodister, Marcourt, Beffe, Rendeux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6990",
+    "displayName": "6990 - Fronville, Hotton, Hampteau, Marenne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "6997",
+    "displayName": "6997 - Erezee, Mormont, Amonines, Soy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7000",
+    "displayName": "7000 - Mons",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7010",
+    "displayName": "7010 - S.H.A.P.E. Belgium",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7011",
+    "displayName": "7011 - Ghlin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7012",
+    "displayName": "7012 - Jemappes, Flénu",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7020",
+    "displayName": "7020 - Nimy, Maisières, Casteau",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7021",
+    "displayName": "7021 - Havré, Ville-sur-haine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7022",
+    "displayName": "7022 - Harmignies, Mesvin, Nouvelles, Hyon, Harveng",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7024",
+    "displayName": "7024 - Ciply",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7030",
+    "displayName": "7030 - St-Symphorien",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7031",
+    "displayName": "7031 - Villers-St-Ghislain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7032",
+    "displayName": "7032 - Spiennes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7033",
+    "displayName": "7033 - Cuesmes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7034",
+    "displayName": "7034 - St-Denis, Obourg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7040",
+    "displayName": "7040 - Blaregnies, Quévy-le-Grand, Asquillies, Aulnois, Goegnies-Chaussée, Bougnies, Genly, Quevy, Quévy-le-Petit",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7041",
+    "displayName": "7041 - Givry, Havay, Quevy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7050",
+    "displayName": "7050 - Jurbise, Erbisoeul, Erbaut, Herchies, Masnuy-St-Pierre, Masnuy-St-Jean",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7060",
+    "displayName": "7060 - Soignies, Horrues",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7061",
+    "displayName": "7061 - Thieusies, Casteau (Soignies)",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7062",
+    "displayName": "7062 - Naast",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7063",
+    "displayName": "7063 - Neufvilles, Chaussée-Notre-Dame-Louvignies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7070",
+    "displayName": "7070 - Le Roeulx, Thieu, Ville-sur-haine, Gottignies, Mignault",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7080",
+    "displayName": "7080 - Sars-la-Bruyère, Noirchain, La Bouverie, Frameries, Eugies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7090",
+    "displayName": "7090 - Braine-le-Comte, Petit-Roeulx-lez-Braine, Henripont, Hennuyères, Ronquières, Steenkerque",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7100",
+    "displayName": "7100 - Haine-St-Pierre, St-Vaast, La Louviere, Haine-St-Paul, Trivières",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7110",
+    "displayName": "7110 - Houdeng-Goegnies, Strépy-Bracquegnies, Maurage, Houdeng-Aimeries, Boussoit",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7120",
+    "displayName": "7120 - Estinnes-au-Mont, Rouveroy, Croix-lez-Rouveroy, Vellereille-le-Sec, Fauroeulx, Estinnes, Estinnes-au-Val, Peissant, Vellereille-les-Brayeux, Haulchin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7130",
+    "displayName": "7130 - Binche, Battignies, Bray",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7131",
+    "displayName": "7131 - Waudrez",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7133",
+    "displayName": "7133 - Buvrinnes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7134",
+    "displayName": "7134 - Péronnes-lez-Binche, Epinois, Leval-Trahegnies, Ressaix",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7140",
+    "displayName": "7140 - Morlanwelz-Mariemont, Morlanwelz",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7141",
+    "displayName": "7141 - Carnières, Mont-Ste-Aldegonde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7160",
+    "displayName": "7160 - Chapelle-lez-Herlaimont, Piéton, Godarville",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7170",
+    "displayName": "7170 - Bellecourt, La Hestre, Bois-d'Haine, Manage, Fayt-lez-manage",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7180",
+    "displayName": "7180 - Seneffe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7181",
+    "displayName": "7181 - Feluy, Familleureux, Petit-Roeulx-lez-Nivelles, Arquennes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7190",
+    "displayName": "7190 - Marche-lez-Ecaussinnes, Ecaussinnes, Ecaussinnes-d'Enghien",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7191",
+    "displayName": "7191 - Ecaussinnes-Lalaing",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7300",
+    "displayName": "7300 - Boussu",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7301",
+    "displayName": "7301 - Hornu",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7320",
+    "displayName": "7320 - Bernissart",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7321",
+    "displayName": "7321 - Harchies, Blaton",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7322",
+    "displayName": "7322 - Pommeroeul, Ville-Pommeroeul",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7330",
+    "displayName": "7330 - St-Ghislain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7331",
+    "displayName": "7331 - Baudour",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7332",
+    "displayName": "7332 - Neufmaison, Sirault",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7333",
+    "displayName": "7333 - Tertre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7334",
+    "displayName": "7334 - Villerot, Hautrage",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7340",
+    "displayName": "7340 - Wasmes, Pâturages, Eugies, Warquignies, Colfontaine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7350",
+    "displayName": "7350 - Montroeul-sur-Haine, Hensies, Hainin, Thulin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7370",
+    "displayName": "7370 - Dour, Elouges, Wihéries, Blaugies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7380",
+    "displayName": "7380 - Baisieux, Quievrain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7382",
+    "displayName": "7382 - Audregnies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7387",
+    "displayName": "7387 - Fayt-le-franc, Erquennes, Roisin, Honnelles, Marchipont, Athis, Onnezies, Autreppe, Montignies-sur-Roc, Angreau, Angre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7390",
+    "displayName": "7390 - Wasmuel, Quaregnon",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7500",
+    "displayName": "7500 - Tournai, St-Maur, Ere",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7501",
+    "displayName": "7501 - Orcq",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7502",
+    "displayName": "7502 - Esplechin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7503",
+    "displayName": "7503 - Froyennes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7504",
+    "displayName": "7504 - Froidmont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7506",
+    "displayName": "7506 - Willemeau",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7520",
+    "displayName": "7520 - Templeuve, Ramegnies-chin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7521",
+    "displayName": "7521 - Chercq",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7522",
+    "displayName": "7522 - Lamain, Hertain, Blandain, Marquain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7530",
+    "displayName": "7530 - Gaurain-Ramecroix",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7531",
+    "displayName": "7531 - Havinnes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7532",
+    "displayName": "7532 - Beclers",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7533",
+    "displayName": "7533 - Thimougies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7534",
+    "displayName": "7534 - Maulde, Barry",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7536",
+    "displayName": "7536 - Vaulx",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7538",
+    "displayName": "7538 - Vezon",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7540",
+    "displayName": "7540 - Melles, Quartes, Kain, Rumillies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7542",
+    "displayName": "7542 - Mont-St-Aubert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7543",
+    "displayName": "7543 - Mourcourt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7548",
+    "displayName": "7548 - Warchin",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7600",
+    "displayName": "7600 - Peruwelz",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7601",
+    "displayName": "7601 - Roucourt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7602",
+    "displayName": "7602 - Bury",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7603",
+    "displayName": "7603 - Bon-secour",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7604",
+    "displayName": "7604 - Baugnies, Brasmenil, Callenelle, Wasmes-Audemez-Briffoeil, Braffe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7608",
+    "displayName": "7608 - Wiers",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7610",
+    "displayName": "7610 - Rumes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7611",
+    "displayName": "7611 - La Glanerie",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7618",
+    "displayName": "7618 - Taintignies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7620",
+    "displayName": "7620 - Wez-Velvain, Hollain, Bléharies, Brunehaut, Jollain-Merlin, Guignies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7621",
+    "displayName": "7621 - Lesdain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7622",
+    "displayName": "7622 - Laplaigne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7623",
+    "displayName": "7623 - Rongy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7624",
+    "displayName": "7624 - Howardries",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7640",
+    "displayName": "7640 - Maubray, Péronnes-lez-Antoing, Antoing",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7641",
+    "displayName": "7641 - Bruyelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7642",
+    "displayName": "7642 - Calonne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7643",
+    "displayName": "7643 - Fontenoy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7700",
+    "displayName": "7700 - Mouscron, Luingne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7711",
+    "displayName": "7711 - Dottignies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7712",
+    "displayName": "7712 - Herseaux",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7730",
+    "displayName": "7730 - Estaimpuis, Bailleul, Néchin, Estaimbourg, Leers-Nord, Evregnies, St Léger",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7740",
+    "displayName": "7740 - Pecq, Warcoing",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7742",
+    "displayName": "7742 - Hérinnes-lez-Pecq",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7743",
+    "displayName": "7743 - Obigies, Esquelmes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7750",
+    "displayName": "7750 - Anseroeul, Amougies, Russeignies, Orroir, Mont-de-l'Enclus",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7760",
+    "displayName": "7760 - Popuelles, Velaines, Molenbaix, Pottes, Escanaffles, Celles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7780",
+    "displayName": "7780 - Comines, Warneton",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7781",
+    "displayName": "7781 - Houthem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7782",
+    "displayName": "7782 - Ploegsteert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7783",
+    "displayName": "7783 - Bizet",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7784",
+    "displayName": "7784 - Warneton, Bas-Warneton",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7800",
+    "displayName": "7800 - LanqueSt, Ath",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7801",
+    "displayName": "7801 - Irchonwelz",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7802",
+    "displayName": "7802 - Ormeignies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7803",
+    "displayName": "7803 - Bouvignies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7804",
+    "displayName": "7804 - Rebaix, Ostiches",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7810",
+    "displayName": "7810 - Maffle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7811",
+    "displayName": "7811 - Arbre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7812",
+    "displayName": "7812 - Moulbaix, Mainvault, Villers-St-Amand, Ligne, Houtaing, Villers-Notre-Dame",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7822",
+    "displayName": "7822 - Ghislenghien, Meslin-l'Evêque, Isières",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7823",
+    "displayName": "7823 - Gibecq",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7830",
+    "displayName": "7830 - Hellebecq, Silly, Bassilly, Fouleng, Thoricourt, Hoves, Graty, Gondregnies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7850",
+    "displayName": "7850 - Enghien, Petit-Enghien, Marcq",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7860",
+    "displayName": "7860 - Lessines",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7861",
+    "displayName": "7861 - Wannebecq, Papignies",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7862",
+    "displayName": "7862 - Ogy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7863",
+    "displayName": "7863 - Ghoy",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7864",
+    "displayName": "7864 - Deux-Acren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7866",
+    "displayName": "7866 - Ollignies, Bois-de-Lessines",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7870",
+    "displayName": "7870 - Lens, Cambron-St-Vincent, Bauffe, Montignies-lez-Lens, Lombise",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7880",
+    "displayName": "7880 - Flobecq",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7890",
+    "displayName": "7890 - Wodecq, Ellezelles, Lahamaide",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7900",
+    "displayName": "7900 - Leuze-En-Hainaut, Grandmetz",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7901",
+    "displayName": "7901 - Thieulain",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7903",
+    "displayName": "7903 - Blicquy, Chapelle-à-Wattines, Chapelle-à-Oie",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7904",
+    "displayName": "7904 - Willaupuis, Pipaix, Tourpes",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7906",
+    "displayName": "7906 - Gallaix",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7910",
+    "displayName": "7910 - Arc-Wattripont, Frasnes-lez-Anvaing, Arc-Ainières, Forest, Ellignies-lez-Frasnes, Anvaing, Cordes, Wattripont",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7911",
+    "displayName": "7911 - Buissenal, Herquegies, Frasnes-lez-Buissenal, Oeudeghien, Montroeul-au-Bois, Hacquegnies, Moustier",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7912",
+    "displayName": "7912 - St-Sauveur, Dergneau",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7940",
+    "displayName": "7940 - Cambron-Casteau, Brugelette",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7941",
+    "displayName": "7941 - Attre",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7942",
+    "displayName": "7942 - Mévergnies-lez-Lens",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7943",
+    "displayName": "7943 - Gages",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7950",
+    "displayName": "7950 - Tongre-St-Martin, Grosage, Chièvres, Huissignies, Ladeuze",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7951",
+    "displayName": "7951 - Tongre-notre-Dame",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7970",
+    "displayName": "7970 - Beloeil",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7971",
+    "displayName": "7971 - Wadelincourt, Ramegnies, Thumaide, Basècles",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7972",
+    "displayName": "7972 - Quevaucamps, Aubechies, Ellignies-Ste-Anne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "7973",
+    "displayName": "7973 - Grandglise, Stambruges",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8000",
+    "displayName": "8000 - Koolkerke, Brugge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8020",
+    "displayName": "8020 - Hertsberge, Waardamme, Ruddervoorde, Oostkamp",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8200",
+    "displayName": "8200 - St-Michiels, St-Andries",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8210",
+    "displayName": "8210 - Zedelgem, Veldegem, Loppem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8211",
+    "displayName": "8211 - Aartrijke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8300",
+    "displayName": "8300 - Knokke Het Zoute, Westkapelle, Knokke, Knokke, Knokke-Heist, Duinbergen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8301",
+    "displayName": "8301 - Ramskapelle, Heist-aan-zee, Heist-aan-Zee",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8310",
+    "displayName": "8310 - St-Kruis, Assebroek",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8340",
+    "displayName": "8340 - Sijsele, Hoeke, Damme, Moerkerke, Oostkerke, Lapscheure",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8370",
+    "displayName": "8370 - Uitkerke, Blankenberge, Blankenberge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8377",
+    "displayName": "8377 - Houtave, Zuienkerke, Meetkerke, Nieuwmunster",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8380",
+    "displayName": "8380 - Zeebrugge, Zeebrugge, Dudzele, Lissewege",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8400",
+    "displayName": "8400 - Zandvoorde, Stene, Oostende, Oostende",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8420",
+    "displayName": "8420 - De Haan, De Haan, Klemskerke, Wenduine, Wenduine",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8421",
+    "displayName": "8421 - Vlissegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8430",
+    "displayName": "8430 - Middelkerke, Middelkerke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8431",
+    "displayName": "8431 - Wilskerke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8432",
+    "displayName": "8432 - Leffinge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8433",
+    "displayName": "8433 - Slijpe, St-Pieters-Kapelle, Schore, Mannekensvere",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8434",
+    "displayName": "8434 - Lombardsijde, Westende, Westende",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8450",
+    "displayName": "8450 - Bredene, Bredene",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8460",
+    "displayName": "8460 - Ettelgem, Westkerke, Roksem, Oudenburg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8470",
+    "displayName": "8470 - Zevekote, Gistel, Snaaskerke, Moere",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8480",
+    "displayName": "8480 - Eernegem, Bekegem, Ichtegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8490",
+    "displayName": "8490 - Snellegem, Jabbeke, Zerkegem, Stalhille, Varsenare",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8500",
+    "displayName": "8500 - Kortrijk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8501",
+    "displayName": "8501 - Bissegem, Heule",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8510",
+    "displayName": "8510 - Bellegem, Rollegem, Kooigem, Marke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8511",
+    "displayName": "8511 - Aalbeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8520",
+    "displayName": "8520 - Kuurne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8530",
+    "displayName": "8530 - Harelbeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8531",
+    "displayName": "8531 - Hulste, Bavikhove",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8540",
+    "displayName": "8540 - Deerlijk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8550",
+    "displayName": "8550 - Zwevegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8551",
+    "displayName": "8551 - Heestert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8552",
+    "displayName": "8552 - Moen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8553",
+    "displayName": "8553 - Otegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8554",
+    "displayName": "8554 - St-Denijs",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8560",
+    "displayName": "8560 - Wevelgem, Moorsele, Gullegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8570",
+    "displayName": "8570 - Anzegem, Vichte, Ingooigem, Gijzelbrechtegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8572",
+    "displayName": "8572 - Kaster",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8573",
+    "displayName": "8573 - Tiegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8580",
+    "displayName": "8580 - Avelgem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8581",
+    "displayName": "8581 - Kerkhove, Waarmaarde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8582",
+    "displayName": "8582 - Outrijve",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8583",
+    "displayName": "8583 - Bossuit",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8587",
+    "displayName": "8587 - Spierre, Helkijn, Spiere-Helkijn, Spiere-Helkijn, Spiere, Helkijn",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8600",
+    "displayName": "8600 - Woumen, St-Jacobs-Kapelle, Pervijze, Nieuwkapelle, Lampemisse, Kelem, Esen, Driekapellen, Leke, Kaaskerke, Beerst, Stuivekenskerke, Diksmuide, Oudekapelle, Oostkerke, Vladslo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8610",
+    "displayName": "8610 - Werken, Zarren, Kortemark, Handzame",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8620",
+    "displayName": "8620 - Newport, Ramskapelle, St-Joris, Nieuwpoort",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8630",
+    "displayName": "8630 - Vinkem, Steenkerke, Avekapelle, Zoutenaaie, Veurne, Bulskamp, Wulveringem, Houtam, De Moeren, Eggewaartskapelle, Booitshoeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8640",
+    "displayName": "8640 - Westvleteren, Vleteren, Woesten, Oostvleteren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8647",
+    "displayName": "8647 - Noordschote, Lo, Pollinkhove, Reninge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8650",
+    "displayName": "8650 - Klerken, Merkem, Houthulst",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8660",
+    "displayName": "8660 - Adinkerke, La Panne, De Panne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8670",
+    "displayName": "8670 - Sint-Idesbald, Koksijde, Wulpen, Oostduinkerke, Sint-Idesbald, Koksijde, Oostduinkerke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8680",
+    "displayName": "8680 - Zande, Koekelare, Bovekerke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8690",
+    "displayName": "8690 - St-Rijkers, Hoogstade, Alveringem, Oeren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8691",
+    "displayName": "8691 - Izenberge, Leisele, Gijverinkhove, Beveren-aan-den-Ijzer, Stavele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8700",
+    "displayName": "8700 - Kanegem, Aarsele, Tielt, Schuiferskapelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8710",
+    "displayName": "8710 - Ooigem, St-Baafs-Vijve, Wielsbeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8720",
+    "displayName": "8720 - Oeselgem, Dentergem, Wakken, Markegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8730",
+    "displayName": "8730 - Beernem, Oedelem, St-Joris",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8740",
+    "displayName": "8740 - Pittem, Egem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8750",
+    "displayName": "8750 - Zwevezele, Wingene",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8755",
+    "displayName": "8755 - Ruiselede",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8760",
+    "displayName": "8760 - Meulebeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8770",
+    "displayName": "8770 - Ingelmunster",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8780",
+    "displayName": "8780 - Oostrozebeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8790",
+    "displayName": "8790 - Waregem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8791",
+    "displayName": "8791 - Beveren (Leie)",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8792",
+    "displayName": "8792 - Desselgem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8793",
+    "displayName": "8793 - St-Eloois-Vijve",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8800",
+    "displayName": "8800 - Rumbeke, Roeselare, Oekene, Beveren",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8810",
+    "displayName": "8810 - Lichtervelde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8820",
+    "displayName": "8820 - Torhout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8830",
+    "displayName": "8830 - Gits, Hooglede",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8840",
+    "displayName": "8840 - Oostnieuwkerke, Westrozebeke, Staden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8850",
+    "displayName": "8850 - Ardooie",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8851",
+    "displayName": "8851 - Koolskamp",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8860",
+    "displayName": "8860 - Lendelede",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8870",
+    "displayName": "8870 - Kachtem, Izegem, Emelgem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8880",
+    "displayName": "8880 - Ledegem, Rollegem-Kapelle, St-Eloois-Winkel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8890",
+    "displayName": "8890 - Moorslede, Dadizele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8900",
+    "displayName": "8900 - St-Jan, Ieper, Dikkebus, Brielen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8902",
+    "displayName": "8902 - Hollebeke, Voormezele, Zillebeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8904",
+    "displayName": "8904 - Boezinge, Zuidschote",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8906",
+    "displayName": "8906 - Elverdinge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8908",
+    "displayName": "8908 - Vlamertinge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8920",
+    "displayName": "8920 - Langemark, Bikschote, Poelkapelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8930",
+    "displayName": "8930 - Lauwe, Menen, Rekkem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8940",
+    "displayName": "8940 - Wervik, Geluwe",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8950",
+    "displayName": "8950 - Nieuwkerke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8951",
+    "displayName": "8951 - Dranouter",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8952",
+    "displayName": "8952 - Wulvergem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8953",
+    "displayName": "8953 - Wijtschate",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8954",
+    "displayName": "8954 - Westouter",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8956",
+    "displayName": "8956 - Kemmel, Heuvelland",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8957",
+    "displayName": "8957 - Mesen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8958",
+    "displayName": "8958 - Loker",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8970",
+    "displayName": "8970 - Reningelst, Poperinge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8972",
+    "displayName": "8972 - Roesbrugge-Haringe, Proven, Krombeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8978",
+    "displayName": "8978 - Watou",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "8980",
+    "displayName": "8980 - Beselare, Zandvoorde, Passendale, Zonnebeke, Geluveld",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9000",
+    "displayName": "9000 - Gent",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9030",
+    "displayName": "9030 - Mariakerke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9031",
+    "displayName": "9031 - Drongen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9032",
+    "displayName": "9032 - Wondelgem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9040",
+    "displayName": "9040 - St-Amandsberg",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9041",
+    "displayName": "9041 - Oostakker",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9042",
+    "displayName": "9042 - St-Kruis-winkel, Desteldonk, Mendonk",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9050",
+    "displayName": "9050 - Ledeberg, Gentbrugge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9051",
+    "displayName": "9051 - Afsnee, St-Denijs-Westrem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9052",
+    "displayName": "9052 - Zwijnaarde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9060",
+    "displayName": "9060 - Zelzate",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9070",
+    "displayName": "9070 - Destelbergen, Heusden",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9080",
+    "displayName": "9080 - Zaffelare, Zeveneken, Beervelde, Lochristi",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9090",
+    "displayName": "9090 - Melle, Gontrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9100",
+    "displayName": "9100 - Nieuwkerken-Waas, St-Niklaas",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9111",
+    "displayName": "9111 - Belsele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9112",
+    "displayName": "9112 - Sinaai-Waas",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9120",
+    "displayName": "9120 - Haasdonk, Vrasene, Melsele, Beveren-Waas, Kallo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9130",
+    "displayName": "9130 - Verrebroek, Kieldrecht, Doel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9140",
+    "displayName": "9140 - Steendorp, Temse, Elversele, Tielrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9150",
+    "displayName": "9150 - Kruibeke, Bazel, Rupelmonde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9160",
+    "displayName": "9160 - Lokeren, Eksaarde, Daknam",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9170",
+    "displayName": "9170 - De Klinge, St-Gillis-Waas, Meerdonk, St-Pauwels",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9180",
+    "displayName": "9180 - Moerbeke-Waas",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9185",
+    "displayName": "9185 - Wachtebeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9190",
+    "displayName": "9190 - Stekene, Kemzeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9200",
+    "displayName": "9200 - Appels, Oudegem, St-Gillis-bij-Dendermonde, Mespelare, Schoonaarde, Dendermonde, Grembergen, Baasrode",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9220",
+    "displayName": "9220 - Hamme, Moerzeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9230",
+    "displayName": "9230 - Wetteren, Westrem, Massemen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9240",
+    "displayName": "9240 - Zele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9250",
+    "displayName": "9250 - Waasmunster",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9255",
+    "displayName": "9255 - Opdorp, Buggenhout",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9260",
+    "displayName": "9260 - Schellebelle, Serskamp, Wichelen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9270",
+    "displayName": "9270 - Kalken, Laarne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9280",
+    "displayName": "9280 - Wieze, Lebbeke, Denderbelle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9290",
+    "displayName": "9290 - Berlare, Overmere, Uitbergen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9300",
+    "displayName": "9300 - Aalst",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9308",
+    "displayName": "9308 - Gijzegem, Hofstade",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9310",
+    "displayName": "9310 - Moorsel, Meldert, Herdersem, Baardegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9320",
+    "displayName": "9320 - Nieuwerkerken, Erembodegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9340",
+    "displayName": "9340 - Smeltede, Oordegem, Wanzele, Impe, Lede",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9400",
+    "displayName": "9400 - Okegem, Voorde, Nederhasselt, Appelterre-Eichem, Ninove, Denderwindeke, Lieferinge",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9401",
+    "displayName": "9401 - Pollare",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9402",
+    "displayName": "9402 - Meerbeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9403",
+    "displayName": "9403 - Neigem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9404",
+    "displayName": "9404 - Aspelare",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9406",
+    "displayName": "9406 - Outer",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9420",
+    "displayName": "9420 - Bambrugge, Vlekkem, Burst, Aaigem, Ottergem, Mere, Erpe, Erondegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9450",
+    "displayName": "9450 - Heldergem, Denderhoutem, Haaltert",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9451",
+    "displayName": "9451 - Kerksken",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9470",
+    "displayName": "9470 - Denderleeuw",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9472",
+    "displayName": "9472 - Iddergem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9473",
+    "displayName": "9473 - Welle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9500",
+    "displayName": "9500 - Zarlardinge, Viane, Moerbeke, Overboelare, Onkerzele, Nederboelare, Geraardsbergen, Goeferdinge, Ophasselt",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9506",
+    "displayName": "9506 - Schendelbeke, Waarbeke, Idegem, Smeerebbe-Vloerzegem, Nieuwenhove, Grimminge, Zandbergen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9520",
+    "displayName": "9520 - Zonnegem, St-Lievens-Houtem, Oombergen, Bavegem, Vlierzele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9521",
+    "displayName": "9521 - Letterhoutem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9550",
+    "displayName": "9550 - St-Lievens-Esse, Steenhuize-Wijnhuize, St-Antelinks, Hillegem, Herzele, Woubrechtegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9551",
+    "displayName": "9551 - Ressegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9552",
+    "displayName": "9552 - Borsbeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9570",
+    "displayName": "9570 - Deftinge, St-Maria-Lierde, Lierde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9571",
+    "displayName": "9571 - Hemelveerdegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9572",
+    "displayName": "9572 - St-Martens-Lierde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9600",
+    "displayName": "9600 - Ronse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9620",
+    "displayName": "9620 - St-Goriks-Oudenhove, Velzeke-Ruddershove, St-Maria-Oudenhove, Erwetegem, Zottegem, Strijpen, Grotenberge, Godveerdegem, Leeuwergem, Elene",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9630",
+    "displayName": "9630 - Paulatem, Hundelgem, Beerlegem, St-Denijs-Boekel, St-Blasius-Boekel, Roborst, Munkzwalm, Dikkele, Mellegem, Zwalm, Rozebeke, St-Maria-Latem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9636",
+    "displayName": "9636 - Nederzwalm-Hermelgem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9660",
+    "displayName": "9660 - Zegelsem, Nederbrakel, St-Maria-Oudenhove, Opbrakel, Michelbeke, Brakel, Everbeek, Elst",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9661",
+    "displayName": "9661 - Parike",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9667",
+    "displayName": "9667 - St-Maria-Horebeke, Horebeke, St-Kornelis-Horebeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9680",
+    "displayName": "9680 - Etikhove, Maarkedal, Maarke-kerkem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9681",
+    "displayName": "9681 - Nukerke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9688",
+    "displayName": "9688 - Schorisse",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9690",
+    "displayName": "9690 - Berchem, Ruien, Kwaremont, Zulzeke, Kluisbergen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9700",
+    "displayName": "9700 - Welden, Mullem, Oudenaarde, Nederename, Melden, Ename, Eine, Mater, Edelare, Leupegem, Vokegem, Heume, Bevere, Ooike",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9750",
+    "displayName": "9750 - Ouwegem, Zingem, Huise",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9770",
+    "displayName": "9770 - Kruishoutem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9771",
+    "displayName": "9771 - Nokere",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9772",
+    "displayName": "9772 - Wannegem-Lede",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9790",
+    "displayName": "9790 - Wortegem, Ooike, Moregem, Wortegem-Petegem, Petegem-aan-de-Schelde, Elsegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9800",
+    "displayName": "9800 - St-Martens-Leerne, Petegem-aan-de-Leie, Astene, Deinze, Vinkt, Meigem, Bachte-Maria-Leerne, Gottem, Zeveren, Wontergem, Grammene",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9810",
+    "displayName": "9810 - Eke, Nazareth",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9820",
+    "displayName": "9820 - Merelbeke, Lemberge, Bottelare, Munte, Schelderode, Melsen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9830",
+    "displayName": "9830 - St-Martens-Latem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9831",
+    "displayName": "9831 - Deurle",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9840",
+    "displayName": "9840 - Zevergem, De Pinte",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9850",
+    "displayName": "9850 - Poesele, Hansbeke, Landegem, Vosselare, Merendree, Nevele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9860",
+    "displayName": "9860 - Oosterzele, Moortsele, Landskouter, Gijzenzele, Balegem, Scheldewindeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9870",
+    "displayName": "9870 - Zulte, Olsene, Machelen",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9880",
+    "displayName": "9880 - Lotenhulle, Aalter, Poeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9881",
+    "displayName": "9881 - Bellem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9890",
+    "displayName": "9890 - Vurste, Semmerzake, Baaigem, Gavere, Asper, Dikkelvenne",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9900",
+    "displayName": "9900 - Eeklo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9910",
+    "displayName": "9910 - Ursel, Knesselare",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9920",
+    "displayName": "9920 - Lovendegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9921",
+    "displayName": "9921 - Vinderhoute",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9930",
+    "displayName": "9930 - Zomergem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9931",
+    "displayName": "9931 - Oostwinkel",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9932",
+    "displayName": "9932 - Ronsele",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9940",
+    "displayName": "9940 - Ertvelde, Sleidinge, Kluizen, Evergem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9950",
+    "displayName": "9950 - Waarschoot",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9960",
+    "displayName": "9960 - Assenede",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9961",
+    "displayName": "9961 - Boekhoute",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9968",
+    "displayName": "9968 - Oosteeklo, Bassevelde",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9970",
+    "displayName": "9970 - Kaprijke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9971",
+    "displayName": "9971 - Lembeke",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9980",
+    "displayName": "9980 - St-Laureins",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9981",
+    "displayName": "9981 - St-Margriete",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9982",
+    "displayName": "9982 - St-Jan-in-Eremo",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9988",
+    "displayName": "9988 - Watervliet, Waterland-Oudeman",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9990",
+    "displayName": "9990 - Maldegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9991",
+    "displayName": "9991 - Adegem",
+    "type": "POSTAL_CODE"
+  },
+  {
+    "id": "9992",
+    "displayName": "9992 - Middelburg",
+    "type": "POSTAL_CODE"
+  }
+]
