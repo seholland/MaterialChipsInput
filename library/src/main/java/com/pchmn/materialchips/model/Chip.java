@@ -6,7 +6,8 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-public class Chip implements ChipInterface {
+public class Chip implements ChipInterface, Comparable<Chip>
+{
 
     private Object id;
     private Uri avatarUri;
@@ -74,5 +75,32 @@ public class Chip implements ChipInterface {
     @Override
     public String getInfo() {
         return info;
+    }
+
+    @Override
+    public int compareTo(@NonNull Chip o)
+    {
+        if(this.getId().equals(o.getId()))
+            return 0;
+
+        return this.getLabel().compareTo(o.getLabel());
+    }
+
+    @Override
+    public int hashCode()
+    {
+        return this.getId().hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+        if(obj == null || !(obj instanceof Chip))
+            return false;
+
+        if(this.getId() == null || ((Chip) obj).getId() == null)
+        	return super.equals(obj);
+
+        return this.getId().equals(((Chip)obj).getId());
     }
 }

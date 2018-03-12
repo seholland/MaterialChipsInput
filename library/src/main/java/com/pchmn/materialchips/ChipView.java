@@ -222,7 +222,11 @@ public class ChipView extends RelativeLayout {
             else
                 mLabelTextView.setPadding(ViewUtil.dpToPx(8), 0, ViewUtil.dpToPx(12), 0);
 
-            setLabelColor(ContextCompat.getColor(mContext, android.R.color.black));
+            if(mLabelColor == null)
+            {
+                setLabelColor(ContextCompat.getColor(mContext, android.R.color.black));
+            }
+
             if(mAvatarIconUri != null) {
                 if(mAvatarIconUri.equals(Uri.EMPTY)) {
                     mAvatarIconImageView.setVisibility(GONE);

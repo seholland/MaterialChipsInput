@@ -12,6 +12,11 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
 
+import com.pchmn.materialchips.ChipsInput;
+import com.pchmn.materialchips.R;
+import com.pchmn.materialchips.model.ChipInterface;
+import com.pchmn.materialchips.util.ColorUtil;
+import com.pchmn.materialchips.util.LetterTileProvider;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -22,262 +27,331 @@ import java.util.List;
 import java.util.Locale;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-import com.pchmn.materialchips.ChipsInput;
-import com.pchmn.materialchips.R;
-import com.pchmn.materialchips.model.ChipInterface;
-import com.pchmn.materialchips.util.ColorUtil;
-import com.pchmn.materialchips.util.LetterTileProvider;
 
 import static android.view.View.GONE;
 
-public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements Filterable {
+public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements Filterable
+{
 
-    private static final String TAG = FilterableAdapter.class.toString();
-    // context
-    private Context mContext;
-    // list
-    private List<ChipInterface> mOriginalList = new ArrayList<>();
-    private List<ChipInterface> mChipList = new ArrayList<>();
-    private List<ChipInterface> mFilteredList = new ArrayList<>();
-    private ChipFilter mFilter;
-    private ChipsInput mChipsInput;
-    private LetterTileProvider mLetterTileProvider;
-    private ColorStateList mBackgroundColor;
-    private ColorStateList mTextColor;
-    // recycler
-    private RecyclerView mRecyclerView;
-    // sort
-    private Comparator<ChipInterface> mComparator;
-    private Collator mCollator;
+	private static final String TAG = FilterableAdapter.class.toString();
+	// context
+	private Context mContext;
+	// list
+	private List<ChipInterface> mOriginalList = new ArrayList<>();
+	private List<ChipInterface> mChipList     = new ArrayList<>();
+	private List<ChipInterface> mFilteredList = new ArrayList<>();
+	private ChipFilter                mFilter;
+	private ChipsInput                mChipsInput;
+	private LetterTileProvider        mLetterTileProvider;
+	private ColorStateList            mBackgroundColor;
+	private ColorStateList            mTextColor;
+	private boolean mUseLetterTile;
+	// recycler
+	private RecyclerView              mRecyclerView;
+	// sort
+	private Comparator<ChipInterface> mComparator;
+	private Collator                  mCollator;
 
 
-    public FilterableAdapter(Context context,
-                             RecyclerView recyclerView,
-                             List<? extends ChipInterface> chipList,
-                             ChipsInput chipsInput,
-                             ColorStateList backgroundColor,
-                             ColorStateList textColor) {
-        mContext = context;
-        mRecyclerView = recyclerView;
-        mCollator = Collator.getInstance(Locale.getDefault());
-        mCollator.setStrength(Collator.PRIMARY);
-        mComparator = new Comparator<ChipInterface>() {
-            @Override
-            public int compare(ChipInterface o1, ChipInterface o2) {
-                return mCollator.compare(o1.getLabel(), o2.getLabel());
-            }
-        };
-        // remove chips that do not have label
-        Iterator<? extends ChipInterface> iterator = chipList.iterator();
-        while(iterator.hasNext()) {
-            if(iterator.next().getLabel() == null)
-                iterator.remove();
-        }
-        sortList(chipList);
-        mOriginalList.addAll(chipList);
-        mChipList.addAll(chipList);
-        mFilteredList.addAll(chipList);
-        mLetterTileProvider = new LetterTileProvider(mContext);
-        mBackgroundColor = backgroundColor;
-        mTextColor = textColor;
-        mChipsInput = chipsInput;
+	public FilterableAdapter(Context context, RecyclerView recyclerView, List<? extends ChipInterface> chipList, ChipsInput chipsInput, ColorStateList backgroundColor, ColorStateList textColor, boolean useLetterTile)
+	{
+		mContext = context;
+		mRecyclerView = recyclerView;
+		mCollator = Collator.getInstance(Locale.getDefault());
+		mCollator.setStrength(Collator.PRIMARY);
+		mComparator = new Comparator<ChipInterface>()
+		{
+			@Override
+			public int compare(ChipInterface o1, ChipInterface o2)
+			{
+				return mCollator.compare(o1.getLabel(), o2.getLabel());
+			}
+		};
 
-        mChipsInput.addChipsListener(new ChipsInput.ChipsListener() {
-            @Override
-            public void onChipAdded(ChipInterface chip, int newSize) {
-                removeChip(chip);
-            }
+		setChipList(chipList);
+		mLetterTileProvider = new LetterTileProvider(mContext);
+		mBackgroundColor = backgroundColor;
+		mTextColor = textColor;
+		mUseLetterTile = useLetterTile;
+		mChipsInput = chipsInput;
 
-            @Override
-            public void onChipRemoved(ChipInterface chip, int newSize) {
-                addChip(chip);
-            }
+		mChipsInput.addChipsListener(new ChipsInput.ChipsListener()
+		{
+			@Override
+			public void onChipAdded(ChipInterface chip, int newSize)
+			{
+				removeChip(chip);
+			}
 
-            @Override
-            public void onTextChanged(CharSequence text) {
-                mRecyclerView.scrollToPosition(0);
-            }
+			@Override
+			public void onChipRemoved(ChipInterface chip, int newSize)
+			{
+				addChip(chip);
+			}
 
-            @Override
-            public void onNewChip(CharSequence text)
-            {
+			@Override
+			public void onTextChanged(CharSequence text)
+			{
+				mRecyclerView.scrollToPosition(0);
+			}
 
-            }
-        });
-    }
+			@Override
+			public void onNewChip(CharSequence text)
+			{
 
-    private class ItemViewHolder extends RecyclerView.ViewHolder {
+			}
+		});
+	}
 
-        private CircleImageView mAvatar;
-        private TextView mLabel;
-        private TextView mInfo;
 
-        ItemViewHolder(View view) {
-            super(view);
-            mAvatar = (CircleImageView) view.findViewById(R.id.avatar);
-            mLabel = (TextView) view.findViewById(R.id.label);
-            mInfo = (TextView) view.findViewById(R.id.info);
-        }
-    }
+	/**
+	 * @param chipList The new list of suggestions
+	 * @return True if the list was modified, false if it wasn't
+	 */
+	public boolean setChipList(List<? extends ChipInterface> chipList)
+	{
+		// remove chips that do not have label
+		Iterator<? extends ChipInterface> iterator = chipList.iterator();
+		while(iterator.hasNext())
+		{
+			if(iterator.next().getLabel() == null)
+			{
+				iterator.remove();
+			}
+		}
+		sortList(chipList);
+		if(!mOriginalList.equals(chipList))
+		{
+			mOriginalList.clear();
+			mOriginalList.addAll(chipList);
+			mChipList.clear();
+			mChipList.addAll(chipList);
+			mFilteredList.clear();
+			mFilteredList.addAll(chipList);
+			return true;
+		}
+		return false;
+	}
 
-    @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.item_list_filterable, parent, false);
-        return new ItemViewHolder(view);
-    }
+	private class ItemViewHolder extends RecyclerView.ViewHolder
+	{
 
-    @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        ItemViewHolder itemViewHolder = (ItemViewHolder) holder;
-        final ChipInterface chip = getItem(position);
+		private CircleImageView mAvatar;
+		private TextView        mLabel;
+		private TextView        mInfo;
 
-        // avatar
-        if(mChipsInput.chipHasAvatarIcon() && chip.getAvatarUri() != null) {
-            itemViewHolder.mAvatar.setVisibility(View.VISIBLE);
-            itemViewHolder.mAvatar.setImageURI(chip.getAvatarUri());
-        }
-        else if(mChipsInput.chipHasAvatarIcon() && chip.getAvatarDrawable() != null) {
-            itemViewHolder.mAvatar.setVisibility(View.VISIBLE);
-            itemViewHolder.mAvatar.setImageDrawable(chip.getAvatarDrawable());
-        }
-        else if(mChipsInput.chipHasAvatarIcon()) {
-            itemViewHolder.mAvatar.setVisibility(View.VISIBLE);
-            itemViewHolder.mAvatar.setImageBitmap(mLetterTileProvider.getLetterTile(chip.getLabel()));
-        }
-        else {
-            itemViewHolder.mAvatar.setVisibility(GONE);
-        }
+		ItemViewHolder(View view)
+		{
+			super(view);
+			mAvatar = (CircleImageView) view.findViewById(R.id.avatar);
+			mLabel = (TextView) view.findViewById(R.id.label);
+			mInfo = (TextView) view.findViewById(R.id.info);
+		}
+	}
 
-        // label
-        itemViewHolder.mLabel.setText(chip.getLabel());
+	@Override
+	public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+	{
+		View view = LayoutInflater.from(mContext).inflate(R.layout.item_list_filterable, parent, false);
+		return new ItemViewHolder(view);
+	}
 
-        // info
-        if(chip.getInfo() != null) {
-            itemViewHolder.mInfo.setVisibility(View.VISIBLE);
-            itemViewHolder.mInfo.setText(chip.getInfo());
-        }
-        else {
-            itemViewHolder.mInfo.setVisibility(GONE);
-        }
+	@Override
+	public void onBindViewHolder(RecyclerView.ViewHolder holder, int position)
+	{
+		ItemViewHolder      itemViewHolder = (ItemViewHolder) holder;
+		final ChipInterface chip           = getItem(position);
 
-        // colors
-        if(mBackgroundColor != null)
-            itemViewHolder.itemView.getBackground().setColorFilter(mBackgroundColor.getDefaultColor(), PorterDuff.Mode.SRC_ATOP);
-        if(mTextColor != null) {
-            itemViewHolder.mLabel.setTextColor(mTextColor);
-            itemViewHolder.mInfo.setTextColor(ColorUtil.alpha(mTextColor.getDefaultColor(), 150));
-        }
+		// avatar
+		if(mChipsInput.chipHasAvatarIcon() && !mUseLetterTile && chip.getAvatarUri() != null)
+		{
+			itemViewHolder.mAvatar.setVisibility(View.VISIBLE);
+			itemViewHolder.mAvatar.setImageURI(chip.getAvatarUri());
+		}
+		else if(mChipsInput.chipHasAvatarIcon() && !mUseLetterTile && chip.getAvatarDrawable() != null)
+		{
+			itemViewHolder.mAvatar.setVisibility(View.VISIBLE);
+			itemViewHolder.mAvatar.setImageDrawable(chip.getAvatarDrawable());
+		}
+		else if(mChipsInput.chipHasAvatarIcon())
+		{
+			itemViewHolder.mAvatar.setVisibility(View.VISIBLE);
+			itemViewHolder.mAvatar.setImageBitmap(mLetterTileProvider.getLetterTile(chip.getLabel()));
+		}
+		else
+		{
+			itemViewHolder.mAvatar.setVisibility(GONE);
+		}
 
-        // onclick
-        itemViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(mChipsInput != null)
-                    mChipsInput.addChip(chip);
-            }
-        });
-    }
+		// label
+		itemViewHolder.mLabel.setText(chip.getLabel());
 
-    @Override
-    public int getItemCount() {
-        return mFilteredList.size();
-    }
+		// info
+		if(chip.getInfo() != null)
+		{
+			itemViewHolder.mInfo.setVisibility(View.VISIBLE);
+			itemViewHolder.mInfo.setText(chip.getInfo());
+		}
+		else
+		{
+			itemViewHolder.mInfo.setVisibility(GONE);
+		}
 
-    private ChipInterface getItem(int position) {
-        return mFilteredList.get(position);
-    }
+		// colors
+		if(mBackgroundColor != null)
+		{
+			itemViewHolder.itemView.getBackground().setColorFilter(mBackgroundColor.getDefaultColor(), PorterDuff.Mode.SRC_ATOP);
+		}
 
-    @Override
-    public Filter getFilter() {
-        if(mFilter == null)
-            mFilter = new ChipFilter(this, mChipList);
-        return mFilter;
-    }
+		if(mTextColor != null)
+		{
+			itemViewHolder.mLabel.setTextColor(mTextColor);
+			itemViewHolder.mInfo.setTextColor(ColorUtil.alpha(mTextColor.getDefaultColor(), 150));
+		}
 
-    private class ChipFilter extends Filter {
+		// onclick
+		itemViewHolder.itemView.setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				if(mChipsInput != null)
+				{
+					mChipsInput.addChip(chip);
+				}
+			}
+		});
+	}
 
-        private FilterableAdapter adapter;
-        private List<ChipInterface> originalList;
-        private List<ChipInterface> filteredList;
+	@Override
+	public int getItemCount()
+	{
+		return mFilteredList.size();
+	}
 
-        public ChipFilter(FilterableAdapter adapter, List<ChipInterface> originalList) {
-            super();
-            this.adapter = adapter;
-            this.originalList = originalList;
-            this.filteredList = new ArrayList<>();
-        }
+	private ChipInterface getItem(int position)
+	{
+		return mFilteredList.get(position);
+	}
 
-        @Override
-        protected FilterResults performFiltering(CharSequence constraint) {
-            filteredList.clear();
-            FilterResults results = new FilterResults();
-            if (constraint.length() == 0) {
-                filteredList.addAll(originalList);
-            } else {
-                final String filterPattern = constraint.toString().toLowerCase().trim();
-                for (ChipInterface chip : originalList) {
-                    if (chip.getLabel().toLowerCase().contains(filterPattern)) {
-                        filteredList.add(chip);
-                    }
-                    else if(chip.getInfo() != null && chip.getInfo().toLowerCase().replaceAll("\\s", "").contains(filterPattern)) {
-                        filteredList.add(chip);
-                    }
-                }
-            }
+	@Override
+	public Filter getFilter()
+	{
+		if(mFilter == null)
+		{
+			mFilter = new ChipFilter(this, mChipList);
+		}
+		return mFilter;
+	}
 
-            results.values = filteredList;
-            results.count = filteredList.size();
-            return results;
-        }
+	private class ChipFilter extends Filter
+	{
 
-        @Override
-        protected void publishResults(CharSequence constraint, FilterResults results) {
-            mFilteredList.clear();
-            if (results != null && results.values != null) {
-                mFilteredList.addAll((ArrayList<ChipInterface>) results.values);
-                notifyDataSetChanged();
-            }
-        }
-    }
+		private FilterableAdapter   adapter;
+		private List<ChipInterface> originalList;
+		private List<ChipInterface> filteredList;
 
-    private void removeChip(ChipInterface chip) {
-        int position = mFilteredList.indexOf(chip);
-        if (position >= 0)
-            mFilteredList.remove(position);
+		public ChipFilter(FilterableAdapter adapter, List<ChipInterface> originalList)
+		{
+			super();
+			this.adapter = adapter;
+			this.originalList = originalList;
+			this.filteredList = new ArrayList<>();
+		}
 
-        position = mChipList.indexOf(chip);
-        if(position >= 0)
-            mChipList.remove(position);
+		@Override
+		protected FilterResults performFiltering(CharSequence constraint)
+		{
+			filteredList.clear();
+			FilterResults results = new FilterResults();
+			if(constraint.length() == 0)
+			{
+				filteredList.addAll(originalList);
+			}
+			else
+			{
+				final String filterPattern = constraint.toString().toLowerCase().trim();
+				for(ChipInterface chip : originalList)
+				{
+					if(chip.getLabel().toLowerCase().contains(filterPattern))
+					{
+						filteredList.add(chip);
+					}
+					else if(chip.getInfo() != null && chip.getInfo().toLowerCase().replaceAll("\\s", "").contains(filterPattern))
+					{
+						filteredList.add(chip);
+					}
+				}
+			}
 
-        notifyDataSetChanged();
-    }
+			results.values = filteredList;
+			results.count = filteredList.size();
+			return results;
+		}
 
-    private void addChip(ChipInterface chip) {
-        if(contains(chip)) {
-            mChipList.add(chip);
-            mFilteredList.add(chip);
-            // sort original list
-            sortList(mChipList);
-            // sort filtered list
-            sortList(mFilteredList);
+		@Override
+		protected void publishResults(CharSequence constraint, FilterResults results)
+		{
+			mFilteredList.clear();
+			if(results != null && results.values != null)
+			{
+				mFilteredList.addAll((ArrayList<ChipInterface>) results.values);
+				notifyDataSetChanged();
+			}
+		}
+	}
 
-            notifyDataSetChanged();
-        }
-    }
+	private void removeChip(ChipInterface chip)
+	{
+		int position = mFilteredList.indexOf(chip);
+		if(position >= 0)
+		{
+			mFilteredList.remove(position);
+		}
 
-    private boolean contains(ChipInterface chip) {
-        for(ChipInterface item: mOriginalList) {
-            if(item.equals(chip))
-                return true;
-        }
-        return false;
-    }
+		position = mChipList.indexOf(chip);
+		if(position >= 0)
+		{
+			mChipList.remove(position);
+		}
 
-    private void sortList(List<? extends ChipInterface> list) {
-        Collections.sort(list, mComparator);
-    }
+		notifyDataSetChanged();
+	}
 
-    public List<ChipInterface> getFilteredList() {
-        return mFilteredList;
-    }
+	private void addChip(ChipInterface chip)
+	{
+		if(contains(chip))
+		{
+			mChipList.add(chip);
+			mFilteredList.add(chip);
+			// sort original list
+			sortList(mChipList);
+			// sort filtered list
+			sortList(mFilteredList);
+
+			notifyDataSetChanged();
+		}
+	}
+
+	private boolean contains(ChipInterface chip)
+	{
+		for(ChipInterface item : mOriginalList)
+		{
+			if(item.equals(chip))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private void sortList(List<? extends ChipInterface> list)
+	{
+		Collections.sort(list, mComparator);
+	}
+
+	public List<ChipInterface> getFilteredList()
+	{
+		return mFilteredList;
+	}
 }
