@@ -11,6 +11,8 @@ import android.support.annotation.ColorInt;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -43,14 +45,17 @@ public class ChipView extends RelativeLayout {
     private Drawable mDeleteIcon;
     private ColorStateList mDeleteIconColor;
     private ColorStateList mBackgroundColor;
+    private boolean mWidthMatchParrent = false;
     // letter tile provider
     private LetterTileProvider mLetterTileProvider;
     // chip
     private ChipInterface mChip;
 
-    public ChipView(Context context) {
+    public ChipView(Context context, boolean widthMatchParent)
+    {
         super(context);
         mContext = context;
+        mWidthMatchParrent = widthMatchParent;
         init(null);
     }
 
@@ -61,7 +66,7 @@ public class ChipView extends RelativeLayout {
     }
 
     private static ChipView newInstance(Builder builder) {
-        ChipView chipView = new ChipView(builder.context);
+        ChipView chipView = new ChipView(builder.context, builder.widthMatchParent);
         chipView.mLabel = builder.label;
         chipView.mLabelColor = builder.labelColor;
         chipView.mHasAvatarIcon = builder.hasAvatarIcon;
@@ -84,7 +89,13 @@ public class ChipView extends RelativeLayout {
      */
     private void init(AttributeSet attrs) {
         // inflate layout
-        View rootView = inflate(getContext(), R.layout.chip_view, this);
+	    int layout = R.layout.chip_view;
+	    if(mWidthMatchParrent)
+	    {
+	    	layout = R.layout.chip_view_wide;
+	    }
+        View rootView = inflate(getContext(), layout, this);
+
         // butter knife
         mContentLayout = rootView.findViewById(R.id.content);
         mAvatarIconImageView = rootView.findViewById(R.id.icon);
@@ -144,6 +155,7 @@ public class ChipView extends RelativeLayout {
         // background color
         if(mBackgroundColor != null)
             setChipBackgroundColor(mBackgroundColor);
+
     }
 
     public void inflate(ChipInterface chip) {
@@ -158,7 +170,7 @@ public class ChipView extends RelativeLayout {
         inflateWithAttributes();
     }
 
-    /**
+	/**
      * Get label
      *
      * @return the label
@@ -394,6 +406,7 @@ public class ChipView extends RelativeLayout {
         private Drawable deleteIcon;
         private ColorStateList deleteIconColor;
         private ColorStateList backgroundColor;
+        private boolean widthMatchParent = false;
         private ChipInterface chip;
 
         public Builder(Context context) {
@@ -443,6 +456,12 @@ public class ChipView extends RelativeLayout {
         public Builder backgroundColor(ColorStateList backgroundColor) {
             this.backgroundColor = backgroundColor;
             return this;
+        }
+
+        public Builder widthMatchParent(boolean widthMatchParent)
+        {
+        	this.widthMatchParent = widthMatchParent;
+        	return this;
         }
 
         public Builder chip(ChipInterface chip) {

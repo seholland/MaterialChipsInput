@@ -98,7 +98,13 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 			@Override
 			public void onNewChip(CharSequence text)
 			{
+				//Not used
+			}
 
+			@Override
+			public void onChipClicked(ChipInterface chip)
+			{
+				//Not used
 			}
 		});
 	}

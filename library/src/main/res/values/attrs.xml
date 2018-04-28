@@ -23,6 +23,7 @@
         <attr name="chip_deleteIcon" format="reference" />
         <attr name="chip_deleteIconColor" format="color" />
         <attr name="chip_backgroundColor" format="color" />
+        <attr name="chip_width_match_parent" format="boolean"/>
         <attr name="showChipDetailed" format="boolean" />
         <attr name="chip_detailed_textColor" format="color" />
         <attr name="chip_detailed_backgroundColor" format="color" />
@@ -31,6 +32,8 @@
         <attr name="filterable_list_textColor" format="color" />
         <attr name="filterable_list_useLetterTile" format="boolean" />
         <attr name="allowNewChips" format="boolean"/>
+        <attr name="chip_clickNotify" format="boolean"/>
+        <attr name="maxViewsInRow" format="integer"/>
     </declare-styleable>
 
     <declare-styleable name="ScrollViewMaxHeight">

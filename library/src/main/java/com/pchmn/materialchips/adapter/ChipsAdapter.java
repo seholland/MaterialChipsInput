@@ -308,6 +308,22 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 							detailedChipView.fadeOut();
 						}
 					});
+
+					if(mChipsInput.shouldChipClickNotify())
+					{
+						mChipsInput.onChipClicked(getItem(position));
+					}
+				}
+			});
+		}
+		else if(mChipsInput.shouldChipClickNotify())
+		{
+			chipView.setOnChipClicked(new View.OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					mChipsInput.onChipClicked(getItem(position));
 				}
 			});
 		}
@@ -548,5 +564,10 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 	public void setText(CharSequence text)
 	{
 		mEditText.setText(text);
+	}
+
+	public String getText()
+	{
+		return mEditText.getText().toString();
 	}
 }
