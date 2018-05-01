@@ -4,11 +4,13 @@ package com.pchmn.materialchips.views;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Configuration;
-import android.graphics.PorterDuff;
-import android.os.Build;
+import android.content.res.Resources;
+import android.graphics.Rect;
+import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
@@ -30,12 +32,12 @@ public class FilterableListView extends RelativeLayout
 	private static final String TAG = FilterableListView.class.toString();
 	// list
 	RecyclerView mRecyclerView;
-	private Context                       mContext;
-	private FilterableAdapter             mAdapter;
+	private Context           mContext;
+	private FilterableAdapter mAdapter;
 	private CharSequence mLastFilter = "";
 	// others
-	private ChipsInput                    mChipsInput;
-	private List<Character>               mValidChipsSeparators;
+	private ChipsInput      mChipsInput;
+	private List<Character> mValidChipsSeparators;
 
 	public FilterableListView(Context context)
 	{
@@ -59,7 +61,8 @@ public class FilterableListView extends RelativeLayout
 	}
 
 
-	public void build(List<? extends ChipInterface> filterableList, ChipsInput chipsInput, ColorStateList backgroundColor, ColorStateList textColor, boolean useLetterTile,  List<Character> validChipsSeparators)
+	public void build(List<? extends ChipInterface> filterableList, ChipsInput chipsInput, ColorStateList backgroundColor, ColorStateList textColor, boolean useLetterTile,
+	                  List<Character> validChipsSeparators)
 	{
 		mChipsInput = chipsInput;
 		mValidChipsSeparators = validChipsSeparators;
@@ -68,51 +71,91 @@ public class FilterableListView extends RelativeLayout
 		mRecyclerView.setAdapter(mAdapter);
 		if(backgroundColor != null)
 		{
-			mRecyclerView.getBackground().setColorFilter(backgroundColor.getDefaultColor(), PorterDuff.Mode.SRC_ATOP);
+			//			mRecyclerView.getBackground().setColorFilter(backgroundColor.getDefaultColor(), PorterDuff.Mode.SRC_ATOP);
+			mRecyclerView.setBackgroundColor(backgroundColor.getDefaultColor());
 		}
 
 		// listen to change in the tree
 		mChipsInput.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener()
 		{
+			private int previousHeightDiff = -1;
 
 			@Override
 			public void onGlobalLayout()
 			{
-
-				// position
 				ViewGroup rootView = (ViewGroup) mChipsInput.getRootView();
-
-				// size
-				RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewUtil.getWindowWidth(mContext), ViewGroup.LayoutParams.MATCH_PARENT);
-
-				layoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);
-				layoutParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
-
-				if(mContext.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+				if(getParent() == null)
 				{
-					layoutParams.bottomMargin = ViewUtil.getNavBarHeight(mContext);
+					// size
+					RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewUtil.getWindowWidth(mContext), ViewGroup.LayoutParams.MATCH_PARENT);
+
+					layoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+					layoutParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+
+					if(mContext.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+					{
+						//						layoutParams.bottomMargin = ViewUtil.getNavBarHeight(mContext);
+					}
+					else
+					{
+						layoutParams.leftMargin = ViewUtil.getNavBarHeight(mContext);
+						layoutParams.rightMargin = ViewUtil.getNavBarHeight(mContext);
+					}
+
+					// add view
+					rootView.addView(FilterableListView.this, layoutParams);
 				}
 				else
 				{
-					layoutParams.leftMargin = ViewUtil.getNavBarHeight(mContext);
-					layoutParams.rightMargin = ViewUtil.getNavBarHeight(mContext);
+					Handler handler = new Handler();
+					handler.postDelayed(new Runnable()
+					{
+						@Override
+						public void run()
+						{
+							int  y = (int) getY();
+							if(y > 0)
+							{
+								Rect r = new Rect();
+								//r will be populated with the coordinates of your view that area still visible.
+								mChipsInput.getWindowVisibleDisplayFrame(r);
+								int rootViewHeight = mChipsInput.getRootView().getHeight();
+								int heightDiff     = rootViewHeight - (r.bottom - r.top);
+								if(heightDiff != previousHeightDiff)
+								{
+									int[] absPosition = new int[2];
+									mChipsInput.getLocationInWindow(absPosition);
+									int chipsInputHeight = mChipsInput.getHeight();
+									previousHeightDiff = heightDiff;
+									ViewGroup.LayoutParams layoutParams = getLayoutParams();
+									int                    newHeight    = rootViewHeight - heightDiff - y + r.top;
+									layoutParams.height = newHeight;
+									requestLayout();
+								}
+							}
+						}
+					}, 500);
 				}
-
-				// add view
-				rootView.addView(FilterableListView.this, layoutParams);
 
 				// remove the listener:
-				if(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN)
-				{
-					mChipsInput.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-				}
-				else
-				{
-					mChipsInput.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-				}
+				//				if(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN)
+				//				{
+				//					mChipsInput.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+				//				}
+				//				else
+				//				{
+				//					mChipsInput.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+				//				}
 			}
 
 		});
+	}
+
+	private int dp2pixels(@NonNull Context context, float dp)
+	{
+		Resources r  = context.getResources();
+		float     px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics());
+		return (int) px;
 	}
 
 	public void setFilterableList(List<? extends ChipInterface> filterableList)
@@ -126,25 +169,25 @@ public class FilterableListView extends RelativeLayout
 	public void filterList(CharSequence text)
 	{
 		mLastFilter = text;
-		if(TextUtils.isEmpty(text) || mValidChipsSeparators.contains(text.toString().charAt(text.length() - 1)))
-		{
-			fadeOut();
-			return;
-		}
+		//		if(TextUtils.isEmpty(text) || mValidChipsSeparators.contains(text.toString().charAt(text.length() - 1)))
+		//		{
+		//			fadeOut();
+		//			return;
+		//		}
 		mAdapter.getFilter().filter(text, new Filter.FilterListener()
 		{
 			@Override
 			public void onFilterComplete(int count)
 			{
 				// show if there are results
-				if(mAdapter.getItemCount() > 0)
-				{
-					fadeIn();
-				}
-				else
-				{
-					fadeOut();
-				}
+//				if(mAdapter.getItemCount() > 0)
+//				{
+//					fadeIn();
+//				}
+				//				else
+				//				{
+				//					fadeOut();
+				//				}
 			}
 		});
 	}

@@ -45,7 +45,7 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 	private LetterTileProvider        mLetterTileProvider;
 	private ColorStateList            mBackgroundColor;
 	private ColorStateList            mTextColor;
-	private boolean mUseLetterTile;
+	private boolean                   mUseLetterTile;
 	// recycler
 	private RecyclerView              mRecyclerView;
 	// sort
@@ -53,7 +53,8 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 	private Collator                  mCollator;
 
 
-	public FilterableAdapter(Context context, RecyclerView recyclerView, List<? extends ChipInterface> chipList, ChipsInput chipsInput, ColorStateList backgroundColor, ColorStateList textColor, boolean useLetterTile)
+	public FilterableAdapter(Context context, RecyclerView recyclerView, List<? extends ChipInterface> chipList, ChipsInput chipsInput, ColorStateList backgroundColor, ColorStateList textColor,
+	                         boolean useLetterTile)
 	{
 		mContext = context;
 		mRecyclerView = recyclerView;
@@ -179,7 +180,7 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 			itemViewHolder.mAvatar.setVisibility(View.VISIBLE);
 			itemViewHolder.mAvatar.setImageDrawable(chip.getAvatarDrawable());
 		}
-		else if(mChipsInput.chipHasAvatarIcon())
+		else if(mChipsInput.chipHasAvatarIcon() || mUseLetterTile)
 		{
 			itemViewHolder.mAvatar.setVisibility(View.VISIBLE);
 			itemViewHolder.mAvatar.setImageBitmap(mLetterTileProvider.getLetterTile(chip.getLabel()));

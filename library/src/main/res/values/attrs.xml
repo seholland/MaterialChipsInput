@@ -31,6 +31,7 @@
         <attr name="filterable_list_backgroundColor" format="color" />
         <attr name="filterable_list_textColor" format="color" />
         <attr name="filterable_list_useLetterTile" format="boolean" />
+        <attr name="filterable_list_alwaysVisible" format="boolean" />
         <attr name="allowNewChips" format="boolean"/>
         <attr name="chip_clickNotify" format="boolean"/>
         <attr name="maxViewsInRow" format="integer"/>

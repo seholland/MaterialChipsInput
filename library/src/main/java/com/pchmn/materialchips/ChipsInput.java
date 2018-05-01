@@ -1,17 +1,26 @@
 package com.pchmn.materialchips;
 
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.ColorStateList;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.TypedValue;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
 
 import com.beloo.widget.chipslayoutmanager.ChipsLayoutManager;
 import com.pchmn.materialchips.adapter.ChipsAdapter;
@@ -52,16 +61,17 @@ public class ChipsInput extends ScrollViewMaxHeight
 	private ColorStateList mChipDeleteIconColor;
 	private ColorStateList mChipBackgroundColor;
 	private boolean mChipWidthMatchParent = false;
-	private boolean mShowChipDetailed = true;
-	private boolean mAllowNewChips    = false;
-	private boolean mChipClickNotify  = false;
-	private int     mMaxViewsInRow    = -1;
+	private boolean mShowChipDetailed     = true;
+	private boolean mAllowNewChips        = false;
+	private boolean mChipClickNotify      = false;
+	private int     mMaxViewsInRow        = -1;
 	private ColorStateList mChipDetailedTextColor;
 	private ColorStateList mChipDetailedDeleteIconColor;
 	private ColorStateList mChipDetailedBackgroundColor;
 	private ColorStateList mFilterableListBackgroundColor;
 	private ColorStateList mFilterableListTextColor;
 	private boolean        mFilterableUseLetterTile;
+	private boolean        mFilterableListAlwaysShow;
 	ChipsLayoutManager mChipsLayoutManager;
 	// chips listener
 	private List<ChipsListener> mChipsListenerList = new ArrayList<>();
@@ -92,6 +102,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 	 *
 	 * @param attrs the attributes
 	 */
+	@SuppressLint("ClickableViewAccessibility")
 	private void init(AttributeSet attrs)
 	{
 		// inflate layout
@@ -138,6 +149,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 				mFilterableListBackgroundColor = a.getColorStateList(R.styleable.ChipsInput_filterable_list_backgroundColor);
 				mFilterableListTextColor = a.getColorStateList(R.styleable.ChipsInput_filterable_list_textColor);
 				mFilterableUseLetterTile = a.getBoolean(R.styleable.ChipsInput_filterable_list_useLetterTile, false);
+				mFilterableListAlwaysShow = a.getBoolean(R.styleable.ChipsInput_filterable_list_alwaysVisible, false);
 
 				mAllowNewChips = a.getBoolean(R.styleable.ChipsInput_allowNewChips, false);
 				mChipClickNotify = a.getBoolean(R.styleable.ChipsInput_chip_clickNotify, false);
@@ -151,6 +163,27 @@ public class ChipsInput extends ScrollViewMaxHeight
 
 		// adapter
 		mChipsAdapter = new ChipsAdapter(mContext, this, mRecyclerView);
+		mChipsAdapter.getEditText().setOnTouchListener(new OnTouchListener()
+		{
+			@Override
+			public boolean onTouch(View v, MotionEvent event)
+			{
+				Handler handler = new Handler();
+				handler.postDelayed(new Runnable()
+				{
+					@Override
+					public void run()
+					{
+						if(mFilterableListAlwaysShow)
+						{
+							mFilterableListView.fadeIn();
+						}
+					}
+				}, 500);
+				return false;
+			}
+		});
+
 		mChipsLayoutManager = ChipsLayoutManager.newBuilder(mContext).setOrientation(ChipsLayoutManager.HORIZONTAL).build();
 		if(mMaxViewsInRow > 0)
 		{
@@ -178,7 +211,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 	public void addChip(final ChipInterface chip)
 	{
 		mChipsAdapter.addChip(chip);
-		if(mFilterableListView != null)
+		if(mFilterableListView != null && !mFilterableListAlwaysShow)
 		{
 			mFilterableListView.fadeOut();
 		}
@@ -273,7 +306,6 @@ public class ChipsInput extends ScrollViewMaxHeight
 		{
 			editText.setTextColor(mTextColor);
 		}
-
 		return editText;
 	}
 
@@ -338,11 +370,8 @@ public class ChipsInput extends ScrollViewMaxHeight
 			// show filterable list
 			if(mFilterableListView != null)
 			{
-				if(text.length() > 0)
-				{
-					mFilterableListView.filterList(text);
-				}
-				else
+				mFilterableListView.filterList(text);
+				if(!mFilterableListAlwaysShow && TextUtils.isEmpty(text))
 				{
 					mFilterableListView.fadeOut();
 				}
