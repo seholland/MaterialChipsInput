@@ -149,6 +149,24 @@ public class FilterableListView extends RelativeLayout
 			}
 
 		});
+
+		mChipsInput.addOnLayoutChangeListener(new OnLayoutChangeListener()
+		{
+			@Override
+			public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom)
+			{
+				if(getVisibility() == GONE)
+				{
+					return;
+				}
+
+				int[] coord = new int[2];
+				mChipsInput.getLocationInWindow(coord);
+				MarginLayoutParams layoutParams = (MarginLayoutParams) getLayoutParams();
+				layoutParams.topMargin = coord[1] + mChipsInput.getHeight();
+				setLayoutParams(layoutParams);
+			}
+		});
 	}
 
 	private int dp2pixels(@NonNull Context context, float dp)

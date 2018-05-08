@@ -166,7 +166,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 		mChipsAdapter.getEditText().setOnTouchListener(new OnTouchListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public boolean onTouch(View v, final MotionEvent event)
 			{
 				Handler handler = new Handler();
 				handler.postDelayed(new Runnable()
@@ -174,9 +174,16 @@ public class ChipsInput extends ScrollViewMaxHeight
 					@Override
 					public void run()
 					{
-						if(mFilterableListAlwaysShow)
+						if(event.getActionMasked() == MotionEvent.ACTION_UP)
 						{
-							mFilterableListView.fadeIn();
+							if(mFilterableListAlwaysShow)
+							{
+								mFilterableListView.fadeIn();
+							}
+						}
+						else if(event.getActionMasked() == MotionEvent.ACTION_CANCEL)
+						{
+							mFilterableListView.fadeOut();
 						}
 					}
 				}, 500);
@@ -374,6 +381,10 @@ public class ChipsInput extends ScrollViewMaxHeight
 				if(!mFilterableListAlwaysShow && TextUtils.isEmpty(text))
 				{
 					mFilterableListView.fadeOut();
+				}
+				else
+				{
+					mFilterableListView.fadeIn();
 				}
 			}
 		}
