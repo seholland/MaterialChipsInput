@@ -2,7 +2,8 @@ package com.pchmn.materialchips.views;
 
 
 import android.content.Context;
-import android.text.InputType;
+import android.graphics.Rect;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 
 public class ChipsInputEditText extends android.support.v7.widget.AppCompatEditText {

@@ -32,8 +32,8 @@ public class FilterableListView extends RelativeLayout
 	private static final String TAG = FilterableListView.class.toString();
 	// list
 	RecyclerView mRecyclerView;
-	private Context           mContext;
-	private FilterableAdapter mAdapter;
+	private final Context           mContext;
+	private       FilterableAdapter mAdapter;
 	private CharSequence mLastFilter = "";
 	// others
 	private ChipsInput      mChipsInput;

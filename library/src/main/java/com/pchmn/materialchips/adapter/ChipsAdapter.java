@@ -2,6 +2,7 @@ package com.pchmn.materialchips.adapter;
 
 import android.content.Context;
 import android.os.Build;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.InputType;
@@ -34,13 +35,13 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 	private static final String TAG            = ChipsAdapter.class.toString();
 	private static final int    TYPE_EDIT_TEXT = 0;
 	private static final int    TYPE_ITEM      = 1;
-	private Context    mContext;
-	private ChipsInput mChipsInput;
-	private List<ChipInterface> mChipList = new ArrayList<>();
-	private String             mHintLabel;
-	private ChipsInputEditText mEditText;
-	private EditTextViewHolder m_editTextViewHolder;
-	private RecyclerView       mRecycler;
+	private final Context    mContext;
+	private final ChipsInput mChipsInput;
+	private final List<ChipInterface> mChipList = new ArrayList<>();
+	private final String             mHintLabel;
+	private final ChipsInputEditText mEditText;
+	private       EditTextViewHolder m_editTextViewHolder;
+	private final RecyclerView       mRecycler;
 
 	public ChipsAdapter(Context context, ChipsInput chipsInput, RecyclerView recycler)
 	{
@@ -76,8 +77,9 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 		}
 	}
 
+	@NonNull
 	@Override
-	public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+	public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
 	{
 		if(viewType == TYPE_EDIT_TEXT)
 		{
@@ -100,7 +102,7 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 	}
 
 	@Override
-	public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position)
+	public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder holder, int position)
 	{
 		// edit text
 		if(position == mChipList.size())
@@ -227,6 +229,18 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 			public void afterTextChanged(Editable s)
 			{
 
+			}
+		});
+		
+		mEditText.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+			@Override
+			public void onFocusChange(View v, boolean hasFocus)
+			{
+				if(!hasFocus && mEditText.getFilterableListView() != null)
+				{
+					mEditText.getFilterableListView().fadeOut();
+				}
 			}
 		});
 	}

@@ -4,6 +4,7 @@ package com.pchmn.materialchips.adapter;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,22 +36,22 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
 	private static final String TAG = FilterableAdapter.class.toString();
 	// context
-	private Context mContext;
+	private final Context mContext;
 	// list
-	private List<ChipInterface> mOriginalList = new ArrayList<>();
-	private List<ChipInterface> mChipList     = new ArrayList<>();
-	private List<ChipInterface> mFilteredList = new ArrayList<>();
-	private ChipFilter                mFilter;
-	private ChipsInput                mChipsInput;
-	private LetterTileProvider        mLetterTileProvider;
-	private ColorStateList            mBackgroundColor;
-	private ColorStateList            mTextColor;
-	private boolean                   mUseLetterTile;
+	private final List<ChipInterface> mOriginalList = new ArrayList<>();
+	private final List<ChipInterface> mChipList     = new ArrayList<>();
+	private final List<ChipInterface> mFilteredList = new ArrayList<>();
+	private       ChipFilter                mFilter;
+	private final ChipsInput                mChipsInput;
+	private final LetterTileProvider        mLetterTileProvider;
+	private final ColorStateList            mBackgroundColor;
+	private final ColorStateList            mTextColor;
+	private final boolean                   mUseLetterTile;
 	// recycler
-	private RecyclerView              mRecyclerView;
+	private final RecyclerView              mRecyclerView;
 	// sort
-	private Comparator<ChipInterface> mComparator;
-	private Collator                  mCollator;
+	private final Comparator<ChipInterface> mComparator;
+	private final Collator                  mCollator;
 
 
 	public FilterableAdapter(Context context, RecyclerView recyclerView, List<? extends ChipInterface> chipList, ChipsInput chipsInput, ColorStateList backgroundColor, ColorStateList textColor,
@@ -143,28 +144,29 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 	private class ItemViewHolder extends RecyclerView.ViewHolder
 	{
 
-		private CircleImageView mAvatar;
-		private TextView        mLabel;
-		private TextView        mInfo;
+		private final CircleImageView mAvatar;
+		private final TextView        mLabel;
+		private final TextView        mInfo;
 
 		ItemViewHolder(View view)
 		{
 			super(view);
-			mAvatar = (CircleImageView) view.findViewById(R.id.avatar);
-			mLabel = (TextView) view.findViewById(R.id.label);
-			mInfo = (TextView) view.findViewById(R.id.info);
+			mAvatar = view.findViewById(R.id.avatar);
+			mLabel = view.findViewById(R.id.label);
+			mInfo = view.findViewById(R.id.info);
 		}
 	}
 
+	@NonNull
 	@Override
-	public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+	public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
 	{
 		View view = LayoutInflater.from(mContext).inflate(R.layout.item_list_filterable, parent, false);
 		return new ItemViewHolder(view);
 	}
 
 	@Override
-	public void onBindViewHolder(RecyclerView.ViewHolder holder, int position)
+	public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position)
 	{
 		ItemViewHolder      itemViewHolder = (ItemViewHolder) holder;
 		final ChipInterface chip           = getItem(position);
@@ -254,9 +256,9 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 	private class ChipFilter extends Filter
 	{
 
-		private FilterableAdapter   adapter;
-		private List<ChipInterface> originalList;
-		private List<ChipInterface> filteredList;
+		private final FilterableAdapter   adapter;
+		private final List<ChipInterface> originalList;
+		private final List<ChipInterface> filteredList;
 
 		public ChipFilter(FilterableAdapter adapter, List<ChipInterface> originalList)
 		{

@@ -3,8 +3,6 @@ package com.pchmn.materialchips.model;
 
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.Parcel;
-import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 

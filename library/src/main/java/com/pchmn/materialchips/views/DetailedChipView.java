@@ -35,9 +35,9 @@ public class DetailedChipView extends RelativeLayout {
     TextView mInfoTextView;
     ImageButton mDeleteButton;
     // context
-    private Context mContext;
+    private final Context        mContext;
     // attributes
-    private ColorStateList mBackgroundColor;
+    private       ColorStateList mBackgroundColor;
 
     public DetailedChipView(Context context) {
         super(context);
@@ -95,11 +95,11 @@ public class DetailedChipView extends RelativeLayout {
         // inflate layout
         View rootView = inflate(getContext(), R.layout.detailed_chip_view, this);
         // butter knife
-        mContentLayout = (RelativeLayout) rootView.findViewById(R.id.content);
-        mAvatarIconImageView = (CircleImageView) rootView.findViewById(R.id.avatar_icon);
-        mNameTextView = (TextView) rootView.findViewById(R.id.name);
-        mInfoTextView = (TextView) rootView.findViewById(R.id.info);
-        mDeleteButton = (ImageButton) rootView.findViewById(R.id.delete_button);
+        mContentLayout = rootView.findViewById(R.id.content);
+        mAvatarIconImageView = rootView.findViewById(R.id.avatar_icon);
+        mNameTextView = rootView.findViewById(R.id.name);
+        mInfoTextView = rootView.findViewById(R.id.info);
+        mDeleteButton = rootView.findViewById(R.id.delete_button);
         // letter tile provider
         mLetterTileProvider = new LetterTileProvider(mContext);
 
@@ -204,14 +204,14 @@ public class DetailedChipView extends RelativeLayout {
     }
 
     public static class Builder {
-        private Context context;
-        private Uri avatarUri;
-        private Drawable avatarDrawable;
-        private String name;
-        private String info;
-        private ColorStateList textColor;
-        private ColorStateList backgroundColor;
-        private ColorStateList deleteIconColor;
+        private final Context        context;
+        private       Uri            avatarUri;
+        private       Drawable       avatarDrawable;
+        private       String         name;
+        private       String         info;
+        private       ColorStateList textColor;
+        private       ColorStateList backgroundColor;
+        private       ColorStateList deleteIconColor;
 
         public Builder(Context context) {
             this.context = context;
