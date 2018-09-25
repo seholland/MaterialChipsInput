@@ -223,7 +223,22 @@ public class FilterableListView extends RelativeLayout
 		int[] coord = new int[2];
 		mChipsInput.getLocationInWindow(coord);
 		MarginLayoutParams layoutParams = (MarginLayoutParams) getLayoutParams();
+		
+		//Adjust the top of the list to appear at the bottom of the chips input
 		layoutParams.topMargin = coord[1] + mChipsInput.getHeight();
+		
+		//Make the list the same width as the chips input
+		layoutParams.width = mChipsInput.getWidth();
+		
+		//Set the list to match the left edge of the chips input
+		setX(coord[0]);
+		
+		//Make the list stretch to the bottom of the window
+		Rect r = new Rect();
+		//r will be populated with the coordinates of your view that area still visible.
+		mChipsInput.getWindowVisibleDisplayFrame(r);
+		layoutParams.height = r.height() - layoutParams.topMargin;
+		
 		setLayoutParams(layoutParams);
 
 		AlphaAnimation anim = new AlphaAnimation(0.0f, 1.0f);
