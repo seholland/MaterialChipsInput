@@ -9,14 +9,11 @@ import android.content.res.TypedArray;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -52,35 +49,36 @@ public class ChipsInput extends ScrollViewMaxHeight
 	private       String         mHint;
 	private       ColorStateList mHintColor;
 	private       ColorStateList mTextColor;
-	private int mMaxRows = 2;
-	private ColorStateList mChipLabelColor;
-	private boolean mChipHasAvatarIcon = true;
-	private boolean mChipDeletable     = false;
-	private Drawable       mChipDeleteIcon;
-	private ColorStateList mChipDeleteIconColor;
-	private ColorStateList mChipBackgroundColor;
-	private boolean mChipWidthMatchParent = false;
-	private boolean mShowChipDetailed     = true;
-	private boolean mAllowNewChips        = false;
-	private boolean mChipClickNotify      = false;
-	private int     mMaxViewsInRow        = -1;
-	private ColorStateList mChipDetailedTextColor;
-	private ColorStateList mChipDetailedDeleteIconColor;
-	private ColorStateList mChipDetailedBackgroundColor;
-	private ColorStateList mFilterableListBackgroundColor;
-	private ColorStateList mFilterableListTextColor;
-	private boolean        mFilterableUseLetterTile;
-	private boolean        mFilterableListAlwaysShow;
+	private       float          mTextSize;
+	private       int            mMaxRows              = 2;
+	private       ColorStateList mChipLabelColor;
+	private       boolean        mChipHasAvatarIcon    = true;
+	private       boolean        mChipDeletable        = false;
+	private       Drawable       mChipDeleteIcon;
+	private       ColorStateList mChipDeleteIconColor;
+	private       ColorStateList mChipBackgroundColor;
+	private       boolean        mChipWidthMatchParent = false;
+	private       boolean        mShowChipDetailed     = true;
+	private       boolean        mAllowNewChips        = false;
+	private       boolean        mChipClickNotify      = false;
+	private       int            mMaxViewsInRow        = -1;
+	private       ColorStateList mChipDetailedTextColor;
+	private       ColorStateList mChipDetailedDeleteIconColor;
+	private       ColorStateList mChipDetailedBackgroundColor;
+	private       ColorStateList mFilterableListBackgroundColor;
+	private       ColorStateList mFilterableListTextColor;
+	private       boolean        mFilterableUseLetterTile;
+	private       boolean        mFilterableListAlwaysShow;
 	ChipsLayoutManager mChipsLayoutManager;
 	// chips listener
-	private final List<ChipsListener> mChipsListenerList = new ArrayList<>();
-	private ChipsListener                 mChipsListener;
+	private final List<ChipsListener>           mChipsListenerList   = new ArrayList<>();
+	private       ChipsListener                 mChipsListener;
 	// chip list
-	private List<? extends ChipInterface> mChipList;
-	private FilterableListView            mFilterableListView;
+	private       List<? extends ChipInterface> mChipList;
+	private       FilterableListView            mFilterableListView;
 	// chip validator
-	private ChipValidator                 mChipValidator;
-	private List<Character> mValidChipSeparators = new ArrayList<>(Arrays.asList(' ', ',', ';'));
+	private       ChipValidator                 mChipValidator;
+	private       List<Character>               mValidChipSeparators = new ArrayList<>(Arrays.asList(' ', ',', ';'));
 	
 	public ChipsInput(Context context)
 	{
@@ -119,6 +117,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 				mHint = a.getString(R.styleable.ChipsInput_hint);
 				mHintColor = a.getColorStateList(R.styleable.ChipsInput_hintColor);
 				mTextColor = a.getColorStateList(R.styleable.ChipsInput_textColor);
+				mTextSize = a.getDimension(R.styleable.ChipsInput_textSize, 16f);
 				mMaxRows = a.getInteger(R.styleable.ChipsInput_maxRows, 2);
 				setMaxHeight(ViewUtil.dpToPx((40 * mMaxRows) + 8));
 				//setVerticalScrollBarEnabled(true);
@@ -307,6 +306,8 @@ public class ChipsInput extends ScrollViewMaxHeight
 		{
 			editText.setTextColor(mTextColor);
 		}
+		
+		editText.setTextSize(mTextSize);
 		return editText;
 	}
 	
@@ -446,6 +447,11 @@ public class ChipsInput extends ScrollViewMaxHeight
 	public void setTextColor(ColorStateList mTextColor)
 	{
 		this.mTextColor = mTextColor;
+	}
+	
+	public void setTextSize(float textSize)
+	{
+		this.mTextSize = textSize;
 	}
 	
 	public ChipsInput setMaxRows(int mMaxRows)
