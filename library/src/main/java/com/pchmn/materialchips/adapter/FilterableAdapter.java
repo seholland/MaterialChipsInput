@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.pchmn.materialchips.ChipsInput;
@@ -82,7 +83,7 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 			@Override
 			public void onChipAdded(ChipInterface chip, int newSize)
 			{
-				removeChip(chip);
+//				removeChip(chip);
 			}
 
 			@Override
@@ -105,6 +106,18 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
 			@Override
 			public void onChipClicked(ChipInterface chip)
+			{
+				//Not used
+			}
+			
+			@Override
+			public void onShowFilterableList()
+			{
+				//Not Used
+			}
+			
+			@Override
+			public void onHideFilterableList()
 			{
 				//Not used
 			}
@@ -144,9 +157,9 @@ public class FilterableAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 	private class ItemViewHolder extends RecyclerView.ViewHolder
 	{
 
-		private final CircleImageView mAvatar;
-		private final TextView        mLabel;
-		private final TextView        mInfo;
+		private final ImageView mAvatar;
+		private final TextView  mLabel;
+		private final TextView  mInfo;
 
 		ItemViewHolder(View view)
 		{

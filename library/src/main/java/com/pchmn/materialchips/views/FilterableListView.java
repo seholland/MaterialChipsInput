@@ -24,6 +24,7 @@ import com.pchmn.materialchips.adapter.FilterableAdapter;
 import com.pchmn.materialchips.model.ChipInterface;
 import com.pchmn.materialchips.util.ViewUtil;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FilterableListView extends RelativeLayout
@@ -38,6 +39,9 @@ public class FilterableListView extends RelativeLayout
 	// others
 	private ChipsInput      mChipsInput;
 	private List<Character> mValidChipsSeparators;
+	private ArrayList<FilterableListListener> mListeners = new ArrayList<>();
+	{
+	}
 
 	public FilterableListView(Context context)
 	{
@@ -245,6 +249,11 @@ public class FilterableListView extends RelativeLayout
 		anim.setDuration(200);
 		startAnimation(anim);
 		setVisibility(VISIBLE);
+		
+		for(FilterableListListener listener : mListeners)
+		{
+			listener.onShowFilterableList();
+		}
 	}
 
 	/**
@@ -262,10 +271,41 @@ public class FilterableListView extends RelativeLayout
 		anim.setDuration(200);
 		startAnimation(anim);
 		setVisibility(GONE);
+		
+		for(FilterableListListener listener : mListeners)
+		{
+			listener.onHideFilterableList();
+		}
 	}
 
 	public FilterableAdapter getFilterableAdapter()
 	{
 		return mAdapter;
+	}
+	
+	public void addListener(FilterableListListener filterableListListener)
+	{
+		//Make sure it's not already registered
+		for(FilterableListListener listener : mListeners)
+		{
+			if(listener == filterableListListener)
+			{
+				return;
+			}
+		}
+		
+		mListeners.add(filterableListListener);
+	}
+	
+	public void removeListener(FilterableListListener filterableListListener)
+	{
+		mListeners.remove(filterableListListener);
+	}
+	
+	public interface FilterableListListener
+	{
+		void onShowFilterableList();
+		
+		void onHideFilterableList();
 	}
 }

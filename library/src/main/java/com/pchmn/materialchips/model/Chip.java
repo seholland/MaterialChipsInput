@@ -95,7 +95,7 @@ public class Chip implements ChipInterface, Comparable<Chip>
     @Override
     public boolean equals(Object obj)
     {
-        if(obj == null || !(obj instanceof Chip))
+        if(!(obj instanceof Chip))
             return false;
 
         if(this.getId() == null || ((Chip) obj).getId() == null)

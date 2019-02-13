@@ -46,8 +46,9 @@ public class ChipsInput extends ScrollViewMaxHeight
 	private final Context        mContext;
 	// adapter
 	private       ChipsAdapter   mChipsAdapter;
-	private       String         mHint;
+	private       CharSequence   mHint;
 	private       ColorStateList mHintColor;
+	private       float          mHintSize;
 	private       ColorStateList mTextColor;
 	private       float          mTextSize;
 	private       int            mMaxRows              = 2;
@@ -69,6 +70,8 @@ public class ChipsInput extends ScrollViewMaxHeight
 	private       ColorStateList mFilterableListTextColor;
 	private       boolean        mFilterableUseLetterTile;
 	private       boolean        mFilterableListAlwaysShow;
+	private       boolean        mFilterableListHidden = false; //When true, the filterable list is never shown
+	
 	ChipsLayoutManager mChipsLayoutManager;
 	// chips listener
 	private final List<ChipsListener>           mChipsListenerList   = new ArrayList<>();
@@ -114,8 +117,9 @@ public class ChipsInput extends ScrollViewMaxHeight
 			try
 			{
 				// hint
-				mHint = a.getString(R.styleable.ChipsInput_hint);
+				mHint = a.getText(R.styleable.ChipsInput_hint);
 				mHintColor = a.getColorStateList(R.styleable.ChipsInput_hintColor);
+				mHintSize = a.getDimension(R.styleable.ChipsInput_hintSize, 16f);
 				mTextColor = a.getColorStateList(R.styleable.ChipsInput_textColor);
 				mTextSize = a.getDimension(R.styleable.ChipsInput_textSize, 16f);
 				mMaxRows = a.getInteger(R.styleable.ChipsInput_maxRows, 2);
@@ -167,7 +171,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 			@Override
 			public boolean onSingleTapConfirmed(MotionEvent e)
 			{
-				if(mFilterableListAlwaysShow)
+				if(mFilterableListAlwaysShow && !mFilterableListHidden)
 				{
 					mFilterableListView.fadeIn();
 				}
@@ -211,7 +215,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 	public void addChip(final ChipInterface chip)
 	{
 		mChipsAdapter.addChip(chip);
-		if(mFilterableListView != null && !mFilterableListAlwaysShow)
+		if(mFilterableListView != null && (mFilterableListHidden || (mFilterableListView != null && !mFilterableListAlwaysShow)))
 		{
 			mFilterableListView.fadeOut();
 		}
@@ -342,7 +346,75 @@ public class ChipsInput extends ScrollViewMaxHeight
 			}
 		}
 		mChipsListenerList.add(chipsListener);
-		mChipsListener = chipsListener;
+		
+		if(mChipsListener == null)
+		{
+			mChipsListener = new ChipsListener()
+			{
+				@Override
+				public void onChipAdded(ChipInterface chip, int newSize)
+				{
+					for(ChipsListener listener : mChipsListenerList)
+					{
+						listener.onChipAdded(chip, newSize);
+					}
+				}
+				
+				@Override
+				public void onChipRemoved(ChipInterface chip, int newSize)
+				{
+					for(ChipsListener listener : mChipsListenerList)
+					{
+						listener.onChipRemoved(chip, newSize);
+					}
+				}
+				
+				@Override
+				public void onTextChanged(CharSequence text)
+				{
+					for(ChipsListener listener : mChipsListenerList)
+					{
+						listener.onTextChanged(text);
+					}
+				}
+				
+				@Override
+				public void onNewChip(CharSequence text)
+				{
+					for(ChipsListener listener : mChipsListenerList)
+					{
+						listener.onNewChip(text);
+					}
+				}
+				
+				@Override
+				public void onChipClicked(ChipInterface chip)
+				{
+					for(ChipsListener listener : mChipsListenerList)
+					{
+						listener.onChipClicked(chip);
+					}
+				}
+				
+				@Override
+				public void onShowFilterableList()
+				{
+					for(ChipsListener listener : mChipsListenerList)
+					{
+						listener.onShowFilterableList();
+					}
+				}
+				
+				@Override
+				public void onHideFilterableList()
+				{
+					for(ChipsListener listener : mChipsListenerList)
+					{
+						listener.onHideFilterableList();
+					}
+				}
+			};
+		}
 	}
 	
 	public void onChipAdded(ChipInterface chip, int size)
@@ -373,7 +445,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 			if(mFilterableListView != null)
 			{
 				mFilterableListView.filterList(text);
-				if(!mFilterableListAlwaysShow && TextUtils.isEmpty(text))
+				if(mFilterableListHidden || (!mFilterableListAlwaysShow && TextUtils.isEmpty(text)))
 				{
 					mFilterableListView.fadeOut();
 				}
@@ -415,6 +487,10 @@ public class ChipsInput extends ScrollViewMaxHeight
 		{
 			mFilterableListView.fadeOut();
 		}
+		
+		//The following commented line will prevent the filterable list from showing when it should
+//		setFilterableListHidden(true);
+		
 		mChipsAdapter.getEditText().clearFocus();
 	}
 	
@@ -429,12 +505,12 @@ public class ChipsInput extends ScrollViewMaxHeight
 		return mChipsAdapter.getChipList();
 	}
 	
-	public String getHint()
+	public CharSequence getHint()
 	{
 		return mHint;
 	}
 	
-	public void setHint(String mHint)
+	public void setHint(CharSequence mHint)
 	{
 		this.mHint = mHint;
 	}
@@ -442,6 +518,16 @@ public class ChipsInput extends ScrollViewMaxHeight
 	public void setHintColor(ColorStateList mHintColor)
 	{
 		this.mHintColor = mHintColor;
+	}
+	
+	public void setHintSize(float hintSize)
+	{
+		this.mHintSize = hintSize;
+	}
+	
+	public float getHintSize()
+	{
+		return mHintSize;
 	}
 	
 	public void setTextColor(ColorStateList mTextColor)
@@ -487,6 +573,12 @@ public class ChipsInput extends ScrollViewMaxHeight
 	
 	public boolean getChipAllowNew()
 	{
+		if(getFilterableListHidden())
+		{
+			//If there's not filterable list, the only thing they can do is add new chips.
+			return true;
+		}
+		
 		return mAllowNewChips;
 	}
 	
@@ -568,12 +660,57 @@ public class ChipsInput extends ScrollViewMaxHeight
 		{
 			mFilterableListView = new FilterableListView(mContext);
 			mFilterableListView.build(mChipList, this, mFilterableListBackgroundColor, mFilterableListTextColor, mFilterableUseLetterTile, getValidChipSeparators());
+			mFilterableListView.addListener(new FilterableListView.FilterableListListener()
+			{
+				@Override
+				public void onShowFilterableList()
+				{
+					for(int i = 0; i < mChipsListenerList.size(); i++)
+					{
+						mChipsListenerList.get(i).onShowFilterableList();
+					}
+				}
+				
+				@Override
+				public void onHideFilterableList()
+				{
+					for(int i = 0; i < mChipsListenerList.size(); i++)
+					{
+						mChipsListenerList.get(i).onHideFilterableList();
+					}
+				}
+			});
 			mChipsAdapter.setFilterableListView(mFilterableListView);
 		}
 		else
 		{
 			mFilterableListView.setFilterableList(list);
 		}
+	}
+	
+	/**
+	 * @param hidden Sets whether or not the filterable list is permanently hidden
+	 */
+	public void setFilterableListHidden(boolean hidden)
+	{
+		mFilterableListHidden = hidden;
+		
+		if(mFilterableListView != null)
+		{
+			if(mFilterableListHidden)
+			{
+				mFilterableListView.fadeOut();
+			}
+			else if(mFilterableListAlwaysShow || mChipsAdapter.getText().length() > 0)
+			{
+				mFilterableListView.fadeIn();
+			}
+		}
+	}
+	
+	public boolean getFilterableListHidden()
+	{
+		return mFilterableListHidden;
 	}
 	
 	public ChipValidator getChipValidator()
@@ -617,6 +754,10 @@ public class ChipsInput extends ScrollViewMaxHeight
 		void onNewChip(CharSequence text);
 		
 		void onChipClicked(ChipInterface chip);
+		
+		void onShowFilterableList();
+		
+		void onHideFilterableList();
 	}
 	
 	public interface ChipValidator
