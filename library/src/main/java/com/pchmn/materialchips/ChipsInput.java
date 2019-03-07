@@ -63,6 +63,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 	private       boolean        mAllowNewChips        = false;
 	private       boolean        mChipClickNotify      = false;
 	private       int            mMaxViewsInRow        = -1;
+	private       boolean        mEditEnabled          = true;
 	private       ColorStateList mChipDetailedTextColor;
 	private       ColorStateList mChipDetailedDeleteIconColor;
 	private       ColorStateList mChipDetailedBackgroundColor;
@@ -156,6 +157,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 				mAllowNewChips = a.getBoolean(R.styleable.ChipsInput_allowNewChips, false);
 				mChipClickNotify = a.getBoolean(R.styleable.ChipsInput_chip_clickNotify, false);
 				mMaxViewsInRow = a.getInt(R.styleable.ChipsInput_maxViewsInRow, -1);
+				mEditEnabled = a.getBoolean(R.styleable.ChipsInput_edit_enabled, true);
 			}
 			finally
 			{
@@ -221,7 +223,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 		}
 	}
 	
-	public void addChips(List<ChipInterface> chips)
+	public void addChips(List<? extends ChipInterface> chips)
 	{
 		for(ChipInterface chip : chips)
 		{
@@ -311,6 +313,14 @@ public class ChipsInput extends ScrollViewMaxHeight
 			editText.setTextColor(mTextColor);
 		}
 		
+		if(!mEditEnabled)
+		{
+			editText.setVisibility(GONE);
+		}
+		else
+		{
+			editText.setVisibility(VISIBLE);
+		}
 		editText.setTextSize(mTextSize);
 		return editText;
 	}
@@ -489,7 +499,7 @@ public class ChipsInput extends ScrollViewMaxHeight
 		}
 		
 		//The following commented line will prevent the filterable list from showing when it should
-//		setFilterableListHidden(true);
+		//		setFilterableListHidden(true);
 		
 		mChipsAdapter.getEditText().clearFocus();
 	}

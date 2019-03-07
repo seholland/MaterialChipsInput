@@ -3,6 +3,6 @@
 
     <color name="colorChipViewBackground">#E0E0E0</color>
     <color name="white_transparency">#b9ffffff</color>
-    <color name="colorAccent">?attr/colorAccent</color>
+    <color name="colorAccent">#E0E0E0</color>
 
 </resources>

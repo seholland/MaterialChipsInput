@@ -37,6 +37,7 @@
         <attr name="allowNewChips" format="boolean"/>
         <attr name="chip_clickNotify" format="boolean"/>
         <attr name="maxViewsInRow" format="integer"/>
+        <attr name="edit_enabled" format="boolean"/>
     </declare-styleable>
 
     <declare-styleable name="ScrollViewMaxHeight">
