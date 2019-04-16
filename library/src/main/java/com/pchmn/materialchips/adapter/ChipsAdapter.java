@@ -184,49 +184,41 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 		mEditText.setInputType(InputType.TYPE_CLASS_TEXT);
 		
 		// handle back space
-		mEditText.setOnKeyListener(new View.OnKeyListener()
+		mEditText.setOnKeyListener((v, keyCode, event) ->
 		{
-			@Override
-			public boolean onKey(View v, int keyCode, KeyEvent event)
+			// backspace
+			if(event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_DEL)
 			{
-				// backspace
-				if(event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_DEL)
+				// remove last chip
+				if(mChipList.size() > 0 && mEditText.getText().toString().length() == 0)
 				{
-					// remove last chip
-					if(mChipList.size() > 0 && mEditText.getText().toString().length() == 0)
-					{
-						removeChip(mChipList.size() - 1);
-					}
+					removeChip(mChipList.size() - 1);
 				}
-				else if(event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)
-				{
-					if(mChipsInput.getChipAllowNew())
-					{
-						mChipsInput.onAddNewChip(mEditText.getText());
-						mEditText.setText("");
-					}
-				}
-				return false;
 			}
+			else if(event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)
+			{
+				if(mChipsInput.getChipAllowNew())
+				{
+					mChipsInput.onAddNewChip(mEditText.getText());
+					mEditText.setText("");
+				}
+			}
+			return false;
 		});
 		
 		//Handle return key
-		mEditText.setOnEditorActionListener(new TextView.OnEditorActionListener()
+		mEditText.setOnEditorActionListener((v, actionId, event) ->
 		{
-			@Override
-			public boolean onEditorAction(TextView v, int actionId, KeyEvent event)
+			if(actionId != EditorInfo.IME_NULL)
 			{
-				if(actionId != EditorInfo.IME_NULL)
+				//They want to add a new tag
+				if(mChipsInput.getChipAllowNew())
 				{
-					//They want to add a new tag
-					if(mChipsInput.getChipAllowNew())
-					{
-						mChipsInput.onAddNewChip(mEditText.getText());
-						mEditText.setText("");
-					}
+					mChipsInput.onAddNewChip(mEditText.getText());
+					mEditText.setText("");
 				}
-				return false;
 			}
+			return false;
 		});
 		
 		// text changed

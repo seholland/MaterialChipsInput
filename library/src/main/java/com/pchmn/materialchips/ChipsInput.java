@@ -583,13 +583,20 @@ public class ChipsInput extends ScrollViewMaxHeight
 	
 	public boolean getChipAllowNew()
 	{
-		if(getFilterableListHidden())
-		{
-			//If there's not filterable list, the only thing they can do is add new chips.
-			return true;
-		}
-		
 		return mAllowNewChips;
+	}
+	
+	public void enableEdit(boolean enable)
+	{
+		mEditEnabled = enable;
+		if(enable)
+		{
+			getEditText().setVisibility(VISIBLE);
+		}
+		else
+		{
+			getEditText().setVisibility(GONE);
+		}
 	}
 	
 	public void setChipDeleteIcon(Drawable mDeleteIcon)
