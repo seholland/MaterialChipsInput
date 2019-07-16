@@ -66,7 +66,13 @@ public class Chip implements ChipInterface, Comparable<Chip>
     public Drawable getAvatarDrawable() {
         return avatarDrawable;
     }
-
+    
+    @Override
+    public Drawable getAvatarBackgroundDrawable()
+    {
+        return null;
+    }
+    
     @Override
     public String getLabel() {
         return label;

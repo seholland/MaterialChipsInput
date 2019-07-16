@@ -10,6 +10,7 @@ public interface ChipInterface
     Object getId();
     Uri getAvatarUri();
     Drawable getAvatarDrawable();
+    Drawable getAvatarBackgroundDrawable();
     String getLabel();
     String getInfo();
 }
