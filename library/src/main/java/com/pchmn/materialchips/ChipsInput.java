@@ -523,6 +523,10 @@ public class ChipsInput extends ScrollViewMaxHeight
 	public void setHint(CharSequence mHint)
 	{
 		this.mHint = mHint;
+		if(mChipsAdapter != null)
+		{
+			this.mChipsAdapter.setHintText(mHint);
+		}
 	}
 	
 	public void setHintColor(ColorStateList mHintColor)

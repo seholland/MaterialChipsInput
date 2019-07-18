@@ -42,7 +42,7 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 	private final        Context             mContext;
 	private final        ChipsInput          mChipsInput;
 	private final        List<ChipInterface> mChipList      = new ArrayList<>();
-	private final        CharSequence        mHintLabel;
+	private              CharSequence        mHintLabel;
 	private              float               mHintSize;
 	private final        ChipsInputEditText  mEditText;
 	private              EditTextViewHolder  m_editTextViewHolder;
@@ -594,5 +594,10 @@ public class ChipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 	public String getText()
 	{
 		return mEditText.getText().toString();
+	}
+	
+	public void setHintText(CharSequence hint)
+	{
+		mHintLabel = hint;
 	}
 }
